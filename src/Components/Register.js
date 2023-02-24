@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Register.css";
 import { TextField } from "@mui/material";
 import Navbar from "./Navbar";
 
 function Register() {
+  const [color, setColor] = useState("warning");
+
   return (
     <div className="register">
       <Navbar />
@@ -15,7 +17,7 @@ function Register() {
           <TextField placeholder="Year" type="text" />
         </div>
         <div className="input-field">
-          <TextField placeholder="College Name" type="text" />
+          <TextField placeholder="College Name" color={color} type="text" />
         </div>
         <div className="input-field">
           <TextField placeholder="Phone Number" type="tel" />
