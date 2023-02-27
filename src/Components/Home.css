@@ -1,56 +1,95 @@
 .home {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../Images/full_template.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../Images/full_template.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .home .header {
-    height: auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .header .content {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* .home .symname {
-    text-align: center;
-    font-size: 450px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-     animation: startup 2s ease-in-out infinite; 
-    filter: url(#threshold) blur(0.6px);
-} */
+.home .symname {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: hsl(0, 0%, 28%);
+  font-size: 350px;
+  font-weight: bold !important;
+  font-family: monospace;
+  letter-spacing: 7px !important;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
 
-.home .symname{
-    margin: auto;
-    color: white;
-    font: 700 normal 2.5em 'tahoma';
-    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+.home .symname {
+  white-space: nowrap;
+  animation: typewriter 4s steps(47) 0.5s 1 normal both;
+}
+.home .symname {
+  padding: 64px;
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 30%) 0,
+    hsl(0, 0%, 100%) 10%,
+    hsl(0, 0%, 30%) 20%,
+    hsl(0, 0%, 100%) 30%,
+    hsl(0, 0%, 30%) 40%,
+    hsl(0, 0%, 100%) 50%,
+    hsl(0, 0%, 30%) 60%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 710px;
+  }
 }
 
 @keyframes startup {
-    0%{
-        transform: translateY(100%);
-    }
+  0% {
+    transform: translateY(100%);
+  }
 
-    50% {
-        transform: translateY(50%);
-    }
+  50% {
+    transform: translateY(50%);
+  }
 
-    100% {
-        transform: translateY(0%);
-    }
+  100% {
+    transform: translateY(0%);
+  }
 }
