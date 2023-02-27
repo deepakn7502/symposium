@@ -1,11 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import Register from "./Components/Register";
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 265e69774c9b3648abef3a3261d292a7bfc8fb89
 import { db } from "./firebase-config";
 import { accessData } from "./server";
 import { collection } from "firebase/firestore";
