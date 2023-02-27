@@ -4,7 +4,6 @@ import Register from "./Components/Register";
 import {} from "./firebase-config";
 import {} from "./server";
 import {} from "firebase/firestore";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
