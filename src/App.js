@@ -7,6 +7,8 @@ import { collection } from "firebase/firestore";
 import { } from "./server"
 import { Button } from "@mui/material";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 function App() {
 
 
@@ -19,10 +21,12 @@ function App() {
   }
 
   return (
-    <div>
-      {/* <Register /> */}
-      <Button onClick={() => { getData() }} variant="contained" >Get Data</Button>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/register"element={<Register />} />
+      </Routes>
+    </Router>
   );
 }
 
