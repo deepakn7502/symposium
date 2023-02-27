@@ -8,6 +8,7 @@ import { } from "./server"
 import { Button } from "@mui/material";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
 
 function App() {
 
@@ -23,8 +24,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/register"element={<Register />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
