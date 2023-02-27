@@ -1,4 +1,5 @@
-import { addDoc, getDoc } from "firebase/firestore";
+import { addDoc, getDoc, getDocs } from "firebase/firestore";
+import { uploadBytes } from "firebase/storage";
 
 export function Upload(databaseRef, data) {
   try {
@@ -10,8 +11,17 @@ export function Upload(databaseRef, data) {
 
 export function accessData(databaseRef) {
   try {
-    return getDoc(databaseRef)
+    return getDocs(databaseRef)
   } catch (error) {
-    console.log(error.message)
+    return console.log(error.message)
+  }
+}
+
+
+export function uploadImages(databaseRef, image) {
+  try {
+    return uploadBytes(databaseRef, image).then(console.log("Uploaded"))
+  } catch (error) {
+    return console.log(error.message)
   }
 }
