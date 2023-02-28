@@ -15,20 +15,22 @@
   align-items: center;
 }
 
-.header .content {
+.home  .name {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  right: 50%;
+  color: rgb(95, 133, 160);
 }
 
-.home .symname {
+.home  .content {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   color: hsl(0, 0%, 28%);
-  font-size: 350px;
+  font-size: 150px;
   font-weight: bold !important;
   font-family: monospace;
   letter-spacing: 7px !important;
@@ -37,11 +39,11 @@
   text-transform: uppercase;
 }
 
-.home .symname {
+.home .content {
   white-space: nowrap;
   animation: typewriter 4s steps(47) 0.5s 1 normal both;
 }
-.home .symname {
+.home .content {
   padding: 64px;
   background: linear-gradient(
     to right,
