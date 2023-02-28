@@ -1,35 +1,74 @@
 import React from "react";
 import "./Home.css";
-import logo from "../Images/logo.PNG";
+import logo from "../Images/pec-logo.png";
+import Card from "./Card";
 
 function Home() {
-    return (
-        <div className="home">
-            <div className="header">
-                <div className="logo"><img class="img" src={logo} alt="" width="auto" height="150px" />
-                </div>
+  return (
+    <div className="home">
+<<<<<<< HEAD
+      <div className="header"> 
+         <div className="logo"><img class="img" src={logo} alt="" width="auto" height="100px" />   </div> 
+        
+=======
+      <div className="header">
+        <div className="logo">
+          <img class="img" src={logo} alt="" width="auto" height="150px" />{" "}
+        </div>
+>>>>>>> 907db61f3f012df44c520d12120aa1c0b8042f2d
 
-                <div className="content">
-                    <h1 >PANIMALAR ENGINEERING COLLEGE </h1>
+        <div className="content">
+          <p id="name">NOIR ON CAMPUS</p>
+          <p id="tagname">AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE </p>
+<<<<<<< HEAD
+          </div>
 
+          </div>
+      
 
-                    <p>An Autonomous Institution</p>
-
-                    <p>Affliated to Anna University,Chennai</p>
-
-                    <p>JAISAKTHI EDUCATIONAL TRUST</p>
-
-                </div>
-
-
+    
+            <div className="cardc1">
+            <Card ename="PIXEL IN THE SHADOWS"  tagline="Empowering innovation through intelligent technology."/>
+            <Card ename="SHERLOCK CODES"  tagline="Unleash your coding skills to become a champion."/>
+            <Card ename="CRACK THE CASE"  tagline="DEII EPUDRAA KAILA VANDHUTU"/>
             </div>
-            <div className="symname">
-                <p id="name" >NOIR'23</p>
+            <div className="cardc2">
+            <Card ename="FORTUNE 500"  tagline="Pitch it quick, make it stick - Adzap!"/>
+            <Card ename="FORTUNE 500"  tagline="VAI ILLANA NAI THUKITU POIDUM"/>
             </div>
 
 
         </div>
     )
+=======
+        </div>
+      </div>
+      <div className="name">
+        <h1>PANIMALAR ENGINEERING COLLEGE </h1>
+        <p>DEPARTMENT OF CSE</p>
+      </div>
+>>>>>>> 907db61f3f012df44c520d12120aa1c0b8042f2d
+
+      <div className="cardc1">
+        <Card 
+          ename="PIXEL IN THE SHADOWS"
+          tagline="Empowering innovation through intelligent technology."
+        />
+        <Card
+          ename="SHERLOCK CODES"
+          tagline="Unleash your coding skills to become a champion."
+        />
+        <Card ename="CRACK THE CASE" tagline="DEII EPUDRAA KAILA VANDHUTU" />
+      </div>
+      <div className="cardc2">
+        <Card
+          ename="FORTUNE 500"
+          tagline="Pitch it quick, make it stick - Adzap!"
+        />
+        <Card ename="FORTUNE 500" tagline="VAI ILLANA NAI THUKITU POIDUM" />
+      </div>
+    </div>
+  );
 }
 
 export default Home;

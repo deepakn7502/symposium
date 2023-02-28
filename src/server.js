@@ -1,5 +1,5 @@
 import { addDoc, getDoc, getDocs } from "firebase/firestore";
-import { uploadBytes } from "firebase/storage";
+import { getDownloadURL, uploadBytes } from "firebase/storage";
 
 export function Upload(databaseRef, data) {
   try {
@@ -11,17 +11,20 @@ export function Upload(databaseRef, data) {
 
 export function accessData(databaseRef) {
   try {
-    return getDocs(databaseRef)
+    return getDocs(databaseRef);
   } catch (error) {
-    return console.log(error.message)
+    return console.log(error.message);
   }
 }
 
-
 export function uploadImages(databaseRef, image) {
   try {
-    return uploadBytes(databaseRef, image).then(console.log("Uploaded"))
+    uploadBytes(databaseRef, image).then((snapshot) => {
+      getDownloadURL(snapshot.ref).then((url) => {
+        return url;
+      });
+    });
   } catch (error) {
-    return console.log(error.message)
+    return console.log(error.message);
   }
 }

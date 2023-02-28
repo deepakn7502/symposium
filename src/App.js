@@ -7,6 +7,7 @@ import { collection } from "firebase/firestore";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Guidelines from "./Components/Guidelines";
+import Card from "./Components/Card";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/guidelines" element={<Guidelines />} />
+        <Route path="/card" element={<Card />} />
       </Routes>
     </Router>
   );
