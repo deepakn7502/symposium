@@ -5,15 +5,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: scroll;
+  background-attachment: fixed;
+  overflow: auto;
+  
 }
 
-/* .home .header {
+.home .header {
   height: auto;
   width: 100%;
   display: flex;
   align-items: center;
-} */
+}
 
 
 
@@ -22,15 +24,15 @@
   height: auto;
   text-align: center;
   
-  position: absolute;
+  /* position: absolute;
   top: 10%;
-  left: 50%;
+  left: 50%; */
 
   color: hsl(0, 0%, 28%);
   font-weight: bold !important;
   font-family: monospace;
   letter-spacing: 5px !important;
-  transform: translate(-50%, -50%); 
+  /* transform: translate(-50%, -50%);  */
    /* cursor: pointer; */
   text-transform: uppercase;
 }
@@ -40,12 +42,12 @@
   animation: typewriter 4s steps(47) 0.5s 1 normal both;
 }
 .home .content {
-  padding: 64px;
+  padding: 10px;
   background: linear-gradient(
     to right,
     hsl(0, 0%, 30%) 0%,
     hsl(0, 0%, 100%) 50%,
-    hsl(0, 0%, 30%) 80%,
+    hsl(0, 26%, 7%) 80%,
     hsl(0, 0%, 30%) 100%
 
 
@@ -53,7 +55,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 5s infinite linear;
+  animation: shine 3s infinite linear;
 }
 
 .content p:nth-child(1){
