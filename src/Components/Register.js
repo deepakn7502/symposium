@@ -7,6 +7,9 @@ import { collection, doc } from "firebase/firestore";
 import { db, storage } from "../firebase-config";
 // import image from "../Images/template.jpg";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
+import image from "../Images/template.jpg";
+import { ref } from "firebase/storage";
+import Card from "./Card";
 
 function Register() {
   // const [color, setColor] = useState("warning");
@@ -119,6 +122,7 @@ function Register() {
 
       {/* <Button variant="contained" onClick={getData}>Get data</Button>
       <Button variant="contained" onClick={uploadData}>Upload</Button> */}
+
       {/* <Button onClick={uploadImage}>Upload Image</Button> */}
 
       <Button variant="contained" onClick={uploadImage}>
@@ -127,6 +131,8 @@ function Register() {
       <Button variant="contained" onClick={uploadData}>
         Submit
       </Button>
+      <Button onClick={uploadImage}>Upload Image</Button>
+      <Card />
     </div>
   );
 }
