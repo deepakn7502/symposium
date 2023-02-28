@@ -10,7 +10,7 @@ function Home() {
                 </div>
 
                 <div className="content">
-                <p id="name" >NOIR'23</p>
+                <p id="name" >NOIR ON CAMPUS</p>
 
                 </div>
 

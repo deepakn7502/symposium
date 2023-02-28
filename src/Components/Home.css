@@ -28,12 +28,13 @@
   text-align: center;
   position: absolute;
   top: 10%;
-  left: 50%;
+  left: 55%;
   color: hsl(0, 0%, 28%);
   font-size: 150px;
   font-weight: bold !important;
   font-family: monospace;
-  letter-spacing: 7px !important;
+  letter-spacing: 5px !important;
+  word-spacing: -50px;
   cursor: pointer;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
@@ -46,14 +47,15 @@
 .home .content {
   padding: 64px;
   background: linear-gradient(
-    to right,
+    to left,
     hsl(0, 0%, 30%) 0,
     hsl(0, 0%, 100%) 10%,
     hsl(0, 0%, 30%) 20%,
     hsl(0, 0%, 100%) 30%,
     hsl(0, 0%, 30%) 40%,
     hsl(0, 0%, 100%) 50%,
-    hsl(0, 0%, 30%) 60%
+    hsl(0, 0%, 30%) 60%,
+    hsl(0, 0%, 100%) 70%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -95,3 +97,4 @@
     transform: translateY(0%);
   }
 }
+
