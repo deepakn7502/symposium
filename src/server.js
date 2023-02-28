@@ -20,7 +20,7 @@ export function accessData(databaseRef) {
 
 export function uploadImages(databaseRef, image) {
   try {
-    return uploadBytes(databaseRef, image).then(console.log("Uploaded"))
+    return uploadBytes(databaseRef, image).then(("Uploaded"))
   } catch (error) {
     return console.log(error.message)
   }

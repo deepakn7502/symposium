@@ -30,8 +30,8 @@ function Register() {
 
   const uploadImage = async () => {
     const uploadimage = image;
-    const databaseRef = ref(storage, "Images")
-    const data = await uploadImages(databaseRef,image)
+    const databaseRef = ref(storage, `images`)
+    const Ref = await uploadImages(databaseRef,image)
   }
   return (
     <div className="register">

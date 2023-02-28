@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import logo from "../Images/logo.PNG";
+import logo from "../Images/logo.png";
 
 function Home() {
     return (
@@ -10,21 +10,14 @@ function Home() {
                 </div>
 
                 <div className="content">
-                    <h1 >PANIMALAR ENGINEERING COLLEGE </h1>
-
-
-                    <p>An Autonomous Institution</p>
-
-                    <p>Affliated to Anna University,Chennai</p>
-
-                    <p>JAISAKTHI EDUCATIONAL TRUST</p>
+                <p id="name" >NOIR ON CAMPUS</p>
 
                 </div>
 
 
             </div>
-            <div className="symname">
-                <p id="name" >NOIR'23</p>
+            <div className="name">
+            <h1>PANIMALAR ENGINEERING COLLEGE </h1>
             </div>
 
 
