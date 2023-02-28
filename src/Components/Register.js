@@ -8,7 +8,6 @@ import { db, storage } from "../firebase-config";
 // import image from "../Images/template.jpg";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import image from "../Images/template.jpg";
-import { ref } from "firebase/storage";
 import Card from "./Card";
 
 function Register() {
