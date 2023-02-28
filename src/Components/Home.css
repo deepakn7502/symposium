@@ -5,15 +5,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: scroll;
+  background-attachment: local;
+  overflow: scroll;
 }
 
-/* .home .header {
+.home .header {
   height: auto;
   width: 100%;
   display: flex;
   align-items: center;
-} */
+}
 
 
 
@@ -22,50 +23,48 @@
   height: auto;
   text-align: center;
   
-  position: absolute;
+  /* position: absolute;
   top: 10%;
-  left: 50%;
+  left: 50%; */
 
   color: hsl(0, 0%, 28%);
   font-weight: bold !important;
   font-family: monospace;
   letter-spacing: 5px !important;
-  transform: translate(-50%, -50%); 
-   /* cursor: pointer; */
-  text-transform: uppercase;
-}
+  /* transform: translate(-50%, -50%);  */
+   cursor: pointer;
+  text-transform: uppercase; 
 
-.home .content {
-  white-space: nowrap;
-  animation: typewriter 4s steps(47) 0.5s 1 normal both;
-}
-.home .content {
-  padding: 64px;
-  background: linear-gradient(
+  padding: 10px;
+  background: linear-gradient( 
     to right,
     hsl(0, 0%, 30%) 0%,
     hsl(0, 0%, 100%) 50%,
-    hsl(0, 0%, 30%) 80%,
+    hsl(0, 0%, 30%) 60%,
+    hsl(0, 0%, 100%) 90%,
     hsl(0, 0%, 30%) 100%
-
-
   );
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 5s infinite linear;
+  -webkit-text-fill-color: transparent; 
+
+  animation: shine 3s infinite linear;
+  
 }
 
 .content p:nth-child(1){
   font-size: 100px;
   word-spacing: -50px;
-  
-}
 
+
+}
 
 .content p:nth-child(2){
       font-size: 25px;
 }
+
+
+
 .cardc1{
  display: flex;
  width: 100%;
@@ -95,39 +94,10 @@
   }
 }
 
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 710px;
-  }
-}
 
-.home  .name {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  right: 50%;
-  color: black;
-}
 
-.name p{
-  font-size: 30px;
-}
 
-@keyframes startup {
-  0% {
-    transform: translateY(100%);
-  }
 
-  50% {
-    transform: translateY(50%);
-  }
 
-  100% {
-    transform: translateY(0%);
-  }
-}
+
 
