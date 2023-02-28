@@ -66,6 +66,22 @@
 .content p:nth-child(2){
       font-size: 25px;
 }
+.cardc1{
+ display: flex;
+ width: 100%;
+ height: auto;
+ align-items: center;
+ justify-content: space-around;  
+ margin: 20px auto;
+}
+.cardc2{
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: space-around;  
+ }
+
 
 @keyframes shine {
   0% {

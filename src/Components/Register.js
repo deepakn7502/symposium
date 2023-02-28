@@ -7,6 +7,7 @@ import { collection, doc } from "firebase/firestore";
 import { db, storage } from "../firebase-config";
 import image from "../Images/template.jpg"
 import { ref } from "firebase/storage";
+import Card from "./Card";
 
 function Register() {
   // const [color, setColor] = useState("warning");
@@ -30,8 +31,8 @@ function Register() {
 
   const uploadImage = async () => {
     const uploadimage = image;
-    const databaseRef = ref(storage, "Images")
-    const data = await uploadImages(databaseRef,image)
+    const databaseRef = ref(storage, `images`)
+    const Ref = await uploadImages(databaseRef,image)
   }
   return (
     <div className="register">
@@ -60,6 +61,7 @@ function Register() {
       {/* <Button variant="contained" onClick={getData}>Get data</Button>
       <Button variant="contained" onClick={uploadData}>Upload</Button> */}
       <Button onClick={uploadImage}>Upload Image</Button>
+      <Card/>
     </div>
   );
 }
