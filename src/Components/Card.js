@@ -66,7 +66,6 @@ export default function Card( { ename, tagline} ) {
           {ename}
         </h1>
         <img
-          
           src={require("../Images/CmqvNiOUEAEPSW1.jpg")}
           alt="Adzap"
           className="sneaaker-img"

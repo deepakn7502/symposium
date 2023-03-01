@@ -22,7 +22,7 @@
     position: relative;
     padding: 25px;
     width: 350px;
-    height: 500px;
+    height: auto;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
@@ -34,8 +34,12 @@
       rgba(75, 53, 118, 1) 0%,
       rgba(248, 177, 60, 1) 86%
     );
-    transition: all 0.1s ease;
+    
   }
+
+
+
+
   .sneaaker-img {
     position: relative;
     width: 75%;

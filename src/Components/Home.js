@@ -1,10 +1,61 @@
-import React from "react";
+import React ,  { useEffect, useState , useRef }  from "react";
 import "./Home.css";
 import { Button, TextField } from "@mui/material";
-import logo from "../Images/pec-logo.png";
+import logo from "../Images/lg.png";
 import Card from "./Card";
 
+
+
 function Home() {
+  
+  const [showOverlay, setShowOverlay] = useState(false);
+ 
+let show = () => {
+
+  setShowOverlay(!showOverlay);
+
+}
+
+  return (
+    <div className="home" >
+       <div className="main" >
+      <div className="header">
+        <div className="logo" >
+          <img src={logo} alt="" width="auto" height="100px" />
+        </div>
+        <div className="content" >
+          <p id="name">NOIR ON CAMPUS</p>
+          <p id="tagname">AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE </p>
+        </div>
+      </div>
+     
+      <div className="cardc1" >
+        <Card
+          ename="PIXEL IN THE SHADOWS"
+          tagline="Empowering innovation through intelligent technology."
+        />
+        <Card
+          ename="SHERLOCK CODES"
+          tagline="Unleash your coding skills to become a champion."
+        />
+        <Card ename="CRACK THE CASE" tagline="DEII EPUDRAA KAILA VANDHUTU" />
+      </div> 
+      <div className="cardc2" >
+        <Card
+          ename="FORTUNE 500"
+          tagline="Pitch it quick, make it stick - Adzap!"
+        />
+        <Card ename="FORTUNE 500" tagline="VAI ILLANA NAI THUKITU POIDUM" />
+      </div>
+
+    
+      </div>
+    
+      </div>
+  );
+}
+
+export default Home;
 
 //   interface Props extends React.Props<Toggle> {
 //     label: string;
@@ -63,45 +114,6 @@ function Home() {
 //     borderRadius: 20 / 2,
 //   },
 // }));
+/* <Toggle label="Simple" style={styles.togglebutton} /> */
 
-  return (
-    <div className="home">
-      <div className="header">
-        <div className="logo">
-          <img class="img" src={logo} alt="" width="auto" height="100px" />
-        </div>
-
-        <div className="content">
-          <p id="name">NOIR ON CAMPUS</p>
-          <p id="tagname">AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE </p>
-        </div>
-      </div>
-
-      <div className="button">
-        
-    {/* <Toggle label="Simple" style={styles.togglebutton} /> */}
-         {/* <Button id="tech" variant="contained" >Technical</Button>   */}
-      </div>
-      <div className="cardc1">
-        <Card
-          ename="PIXEL IN THE SHADOWS"
-          tagline="Empowering innovation through intelligent technology."
-        />
-        <Card
-          ename="SHERLOCK CODES"
-          tagline="Unleash your coding skills to become a champion."
-        />
-        <Card ename="CRACK THE CASE" tagline="DEII EPUDRAA KAILA VANDHUTU" />
-      </div>
-      <div className="cardc2">
-        <Card
-          ename="FORTUNE 500"
-          tagline="Pitch it quick, make it stick - Adzap!"
-        />
-        <Card ename="FORTUNE 500" tagline="VAI ILLANA NAI THUKITU POIDUM" />
-      </div>
-    </div>
-  );
-}
-
-export default Home;
+/* <Button id="tech" variant="contained" >Technical</Button>   */
