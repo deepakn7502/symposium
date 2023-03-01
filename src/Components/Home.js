@@ -1,57 +1,61 @@
-import React ,  { useEffect, useState , useRef }  from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Home.css";
 import { Button, TextField } from "@mui/material";
 import logo from "../Images/lg.png";
 import Card from "./Card";
-
-
+import FlipPage from "react-flip-page";
+import backgroundVideo from "../Images/bg.mp4"
 
 function Home() {
-  
-  const [showOverlay, setShowOverlay] = useState(false);
  
-let show = () => {
-
-  setShowOverlay(!showOverlay);
-
-}
-
   return (
-    <div className="home" >
-       <div className="main" >
-      <div className="header">
-        <div className="logo" >
-          <img src={logo} alt="" width="auto" height="100px" />
-        </div>
-        <div className="content" >
-          <p id="name">NOIR ON CAMPUS</p>
-          <p id="tagname">AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE </p>
-        </div>
-      </div>
-     
-      <div className="cardc1" >
-        <Card
-          ename="PIXEL IN THE SHADOWS"
-          tagline="Empowering innovation through intelligent technology."
-        />
-        <Card
-          ename="SHERLOCK CODES"
-          tagline="Unleash your coding skills to become a champion."
-        />
-        <Card ename="CRACK THE CASE" tagline="DEII EPUDRAA KAILA VANDHUTU" />
-      </div> 
-      <div className="cardc2" >
-        <Card
-          ename="FORTUNE 500"
-          tagline="Pitch it quick, make it stick - Adzap!"
-        />
-        <Card ename="FORTUNE 500" tagline="VAI ILLANA NAI THUKITU POIDUM" />
-      </div>
-
+    <div className="home">
     
-      </div>
-    
-      </div>
+      <div className="main">
+      <video autoPlay  muted id='video'> <source src={backgroundVideo} type='video/mp4'/> </video>
+        <div className="header">
+          <div className="logo">
+            <img src={logo} alt="" width="auto" height="100px" />
+          </div>
+          <div className="content">
+            <p id="name">NOIR ON CAMPUS</p>
+            <p id="tagname">
+              AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE{" "}
+            </p>
+          </div>
+        </div>
+        
+          <div className="cardc1" >
+          
+              <Card
+                ename="PIXEL IN THE SHADOWS"
+                tagline="Empowering innovation through intelligent technology."
+              />
+              <Card
+                ename="SHERLOCK CODES"
+                tagline="Unleash your coding skills to become a champion."
+              />
+              <Card
+                ename="CRACK THE CASE"
+                tagline="DEII EPUDRAA KAILA VANDHUTU"
+              />
+           
+          </div>
+          <div className="cardc2">
+           
+              <Card
+                ename="FORTUNE 500"
+                tagline="Pitch it quick, make it stick - Adzap!"
+              />
+              <Card
+                ename="FORTUNE 500"
+                tagline="VAI ILLANA NAI THUKITU POIDUM"
+              />
+           
+          </div>
+        </div>
+      
+    </div>
   );
 }
 

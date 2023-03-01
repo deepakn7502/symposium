@@ -22,12 +22,13 @@
 .main {
   height: 100vh;
   width: 100vw;
-  background-image: url("../Images/room.jpg");
+  /* background-image: url("../Images/room.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: local;
+  background-attachment: local; */
   overflow: scroll;
+  
 
   /* background-color: black;
   visibility: hidden;  
@@ -39,13 +40,19 @@
   
 }
 
+#video {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  }
+
+
 .main .header {
   height: auto;
   width: 100%;
   display: flex;
   align-items: center;
 }
-
 
 .main .content {
   width: 100%;
@@ -77,10 +84,14 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  animation: fadeIn 3s , shine 3s infinite linear;
+  animation: fadeIn-title 3s , shine 3s infinite linear;
+  opacity: 1;
+  animation-delay: 10s;
   transition: 0s;
 
 }
+
+
 
 .content p:nth-child(1) {
   font-size: 100px;
@@ -91,34 +102,42 @@
   font-size: 25px;
 }
 
+
+
 .cardc1 {
+  
   display: flex;
   width: 100%;
   height: auto;
   align-items: center;
   justify-content: space-around;
-  margin: 150px auto;
+  margin: 100px auto;
 
   
-  animation: fadeIn 8s;
+  /* animation: fadeIn-card1 8s;
   animation-delay: 2s;
   
-  transition: 10s;
-  
+  transition: 1s;
+   */
 }
 
 
 .cardc2 {
+ 
   display: flex;
   width: 100%;
   height: auto;
   align-items: center;
   justify-content: space-around;
+  margin: 100px auto;
 
-  animation: fadeIn 8s;
+  left: 100px;
+  top: 100px;
+
+  /* animation: fadeIn-card2 8s;
   animation-delay: 2s;
 
-  transition: 15s;
+  transition: 2s; */
 }
 
 @keyframes shine {
@@ -133,7 +152,19 @@
   }
 }
 
-  @keyframes fadeIn {
+  @keyframes fadeIn-title {
     0% { opacity: 0; }
-    100% { opacity: 1; }
+    100% { opacity: 1; 
+    }
+  }
+
+  @keyframes fadeIn-card1 {
+    0% { opacity: 0;  margin: 350px auto;}
+    100% { opacity: 1; 
+      margin: 150px auto;}
+  }
+  @keyframes fadeIn-card2 {
+    0% { opacity: 0;  margin: 400px auto;}
+    100% { opacity: 1; 
+      margin: 250px auto;}
   }
