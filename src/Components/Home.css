@@ -1,7 +1,7 @@
 .home {
   height: 100vh;
   width: 100vw;
-  background-image: url("../Images/room.jpg");
+  background-image: url("../Images/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -59,15 +59,16 @@
 }
 
 
-#tech {
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  top: 33%;
-  margin: 0;
-  position: absolute;
-  -ms-transform: translateY(-50%, -50%);
-  transform: translateY(-50%);
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
 }
 
 .cardc1 {
@@ -84,16 +85,4 @@
   height: auto;
   align-items: center;
   justify-content: space-around;
-}
-
-@keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 600px;
-  }
-  100% {
-    background-position: 600px;
-  }
 }
