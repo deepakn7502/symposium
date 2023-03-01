@@ -1,123 +1,64 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Home.css";
 import { Button, TextField } from "@mui/material";
+import logo from "../Images/lgbt.png";
 import logo from "../Images/lg.png";
 import Card from "./Card";
 import FlipPage from "react-flip-page";
 import backgroundVideo from "../Images/bg.mp4"
+import img1 from "../Images/card1.jpg";
+import img2 from "../Images/card1.jpg";
+import img3 from "../Images/card1.jpg";
+import img4 from "../Images/card1.jpg";
+import img5 from "../Images/card1.jpg";
+
+
 
 function Home() {
- 
+
   return (
     <div className="home">
-    
+      <div className="header">
+        <div className="logo">
+          <img src={logo} alt="" width="auto" height="100px" />
+        </div>
       <div className="main">
       <video autoPlay  muted id='video'> <source src={backgroundVideo} type='video/mp4'/> </video>
         <div className="header">
           <div className="logo">
             <img src={logo} alt="" width="auto" height="100px" />
           </div>
-          <div className="content">
-            <p id="name">NOIR ON CAMPUS</p>
-            <p id="tagname">
-              AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE{" "}
-            </p>
-          </div>
         </div>
         
-          <div className="cardc1" >
-          
-              <Card
-                ename="PIXEL IN THE SHADOWS"
-                tagline="Empowering innovation through intelligent technology."
-              />
-              <Card
-                ename="SHERLOCK CODES"
-                tagline="Unleash your coding skills to become a champion."
-              />
-              <Card
-                ename="CRACK THE CASE"
-                tagline="DEII EPUDRAA KAILA VANDHUTU"
-              />
-           
-          </div>
-          <div className="cardc2">
-           
-              <Card
-                ename="FORTUNE 500"
-                tagline="Pitch it quick, make it stick - Adzap!"
-              />
-              <Card
-                ename="FORTUNE 500"
-                tagline="VAI ILLANA NAI THUKITU POIDUM"
-              />
-           
-          </div>
+   
+        <div className="content" >
+          <p id="name">NOIR ON CAMPUS</p>
+          <p id="tagname">AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE </p>
         </div>
-      
+      </div>
+
+
+      <div className="cardc1">
+        <Card ename="PIXEL IN THE SHADOWS (DALL-E AI)" tagline="DEII EPUDRAA KAILA VANDHUTU" img={img1}/>
+        <Card ename="SHERLOCK CODES" tagline="DEII EPUDRAA KAILA VANDHUTU" img={img2}/>
+        <Card ename="CRACK THE CASE" tagline="DEII EPUDRAA KAILA VANDHUTU" img={img3}/>
+      </div>
+      <div className="cardc2">
+        <Card
+          ename="FORTUNE 500"
+          tagline="Pitch it quick, make it stick - Adzap!" img={img4}
+        />
+        <Card ename="Yet to be decided" tagline="VAI ILLANA NAI THUKITU POIDUM" img={img5} />
+      </div>
     </div>
+
+  </div>
+    
+
   );
 }
 
 export default Home;
 
-//   interface Props extends React.Props<Toggle> {
-//     label: string;
-//     style: any;
-// };
 
-// const styles = {
-//   togglebutton: {
-//     marginBottom: 16
-//   }
-// };
 
-// const MaterialUISwitch = styled(Switch)(({ theme }) => ({
-//   width: 62,
-//   height: 34,
-//   padding: 7,
-//   '& .MuiSwitch-switchBase': {
-//     margin: 1,
-//     padding: 0,
-//     transform: 'translateX(6px)',
-//     '&.Mui-checked': {
-//       color: '#fff',
-//       transform: 'translateX(22px)',
-//       '& .MuiSwitch-thumb:before': {
-//         backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
-//           '#fff',
-//         )}" d="M4.2 2.5l-.7 1.8-1.8.7 1.8.7.7 1.8.6-1.8L6.7 5l-1.9-.7-.6-1.8zm15 8.3a6.7 6.7 0 11-6.6-6.6 5.8 5.8 0 006.6 6.6z"/></svg>')`,
-//       },
-//       '& + .MuiSwitch-track': {
-//         opacity: 1,
-//         backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
-//       },
-//     },
-//   },
-//   '& .MuiSwitch-thumb': {
-//     backgroundColor: theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
-//     width: 32,
-//     height: 32,
-//     '&:before': {
-//       content: "''",
-//       position: 'absolute',
-//       width: '100%',
-//       height: '100%',
-//       left: 0,
-//       top: 0,
-//       backgroundRepeat: 'no-repeat',
-//       backgroundPosition: 'center',
-//       backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
-//         '#fff',
-//       )}" d="M9.305 1.667V3.75h1.389V1.667h-1.39zm-4.707 1.95l-.982.982L5.09 6.072l.982-.982-1.473-1.473zm10.802 0L13.927 5.09l.982.982 1.473-1.473-.982-.982zM10 5.139a4.872 4.872 0 00-4.862 4.86A4.872 4.872 0 0010 14.862 4.872 4.872 0 0014.86 10 4.872 4.872 0 0010 5.139zm0 1.389A3.462 3.462 0 0113.471 10a3.462 3.462 0 01-3.473 3.472A3.462 3.462 0 016.527 10 3.462 3.462 0 0110 6.528zM1.665 9.305v1.39h2.083v-1.39H1.666zm14.583 0v1.39h2.084v-1.39h-2.084zM5.09 13.928L3.616 15.4l.982.982 1.473-1.473-.982-.982zm9.82 0l-.982.982 1.473 1.473.982-.982-1.473-1.473zM9.305 16.25v2.083h1.389V16.25h-1.39z"/></svg>')`,
-//     },
-//   },
-//   '& .MuiSwitch-track': {
-//     opacity: 1,
-//     backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
-//     borderRadius: 20 / 2,
-//   },
-// }));
-/* <Toggle label="Simple" style={styles.togglebutton} /> */
-
-/* <Button id="tech" variant="contained" >Technical</Button>   */
