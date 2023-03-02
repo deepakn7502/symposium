@@ -8,7 +8,8 @@ function Navbar() {
       <div className="container">
         <div className="guide">
           <div className="guide1">
-            <p className="gt"> GUIDELINES</p>• One team per college.<br></br> • Each team will
+            <p className="gt"> GUIDELINES</p> 
+            <p className="gcon">• One team per college.<br></br> • Each team will
             be given a topic ,where the two different company's output or
             products will be given.
             <br></br>• Your team has to infuse or integrate both the products of
@@ -32,6 +33,7 @@ function Navbar() {
             <br></br> • The about mentioned are some major etiquette to be
             followed. <br></br>• Team which doesn't stick to the above mentioned
             points will be strictly disqualified.
+            </p>
           </div>
         </div>
         <div className="img">
