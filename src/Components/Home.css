@@ -37,6 +37,10 @@
   
 }
 
+.main .logo{
+  animation: fadeIn-title 3s;
+}
+
 .main .content {
   width: 100%;
   height: auto;
@@ -68,9 +72,7 @@
   -webkit-text-fill-color: transparent;
 
   animation: fadeIn-title 3s , shine 3s infinite linear;
-  
-  animation-delay: 10s;
-  transition: 0s;
+  /* transition: 2s; */
 
 }
 
@@ -105,14 +107,10 @@
   align-items: center;
   justify-content: space-around;
   margin: 100px auto;
-  /* opacity:0; */
 
-  
-  /* animation: fadeIn-card1 8s;
-  animation-delay: 2s;
-  
+  animation: fadeIn-card1 3s;  
   transition: 1s;
-   */
+  
 }
 
 
@@ -124,13 +122,11 @@
   align-items: center;
   justify-content: space-around;
   margin: 100px auto;
-  /* opacity:0; */
 
 
-  /* animation: fadeIn-card2 8s;
-  animation-delay: 2s;
+  animation: fadeIn-card2 3s;
 
-  transition: 2s; */
+  transition: 2s;
 }
 
 @keyframes shine {
@@ -147,6 +143,7 @@
 
   @keyframes fadeIn-title {
     0% { opacity: 0; }
+    50% {opacity: 0.5;}
     100% { opacity: 1; 
     }
   }
