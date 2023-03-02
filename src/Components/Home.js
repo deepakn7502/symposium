@@ -6,10 +6,11 @@ import Card from "./Card";
 import FlipPage from "react-flip-page";
 import backgroundVideo from "../Images/bg.mp4";
 
-import img1 from "../Images/card1.jpg";
-import img2 from "../Images/card1.jpg";
-import img3 from "../Images/card1.jpg";
-import img4 from "../Images/card1.jpg";
+
+import img1 from "../Images/dalleai.jpg";
+import img2 from "../Images/crack.jpg";
+import img3 from "../Images/coder.jpg";
+import img4 from "../Images/fortune500.jpg";
 import img5 from "../Images/card1.jpg";
 
 function Home() {
@@ -35,17 +36,17 @@ function Home() {
         <div className="cardc1">
           <Card
             ename="PIXEL IN THE SHADOWS (DALL-E AI)"
-            tagline="DEII EPUDRAA KAILA VANDHUTU"
+            tagline="AI-NEXTGEN INNOVATION."
             img={img1}
           />
           <Card
             ename="SHERLOCK CODES"
-            tagline="DEII EPUDRAA KAILA VANDHUTU"
+            tagline="YOUR VIRTUAL CODE DETECTIVE.."
             img={img2}
           />
           <Card
             ename="CRACK THE CASE"
-            tagline="DEII EPUDRAA KAILA VANDHUTU"
+            tagline="TRANSFORM YOUR IDEAS INTO REALITY."
             img={img3}
           />
         </div>
@@ -53,12 +54,12 @@ function Home() {
         <div className="cardc2">
           <Card
             ename="FORTUNE 500"
-            tagline="Pitch it quick, make it stick - Adzap!"
+            tagline="PITCH IT QUICK, MAKE IT STICK !"
             img={img4}
           />
           <Card
-            ename="Yet to be decided"
-            tagline="VAI ILLANA NAI THUKITU POIDUM"
+            ename="SQL MYSTERY HUNT"
+            tagline="PUZZLE OF RELATIONAL DATABASES."
             img={img5}
           />
         </div>
