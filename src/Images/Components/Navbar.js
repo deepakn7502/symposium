@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <div className="navbar1">
+    <div className="navbar">
       <div className="name">Heloo</div>
       <div className="container">
         <div className="guide">
@@ -31,10 +31,12 @@ function Navbar() {
             (video) and interference during the recording is not appreciated.
             <br></br> • The about mentioned are some major etiquette to be
             followed. <br></br>• Team which doesn't stick to the above mentioned
-            points will be strictly disqualified.
+            points will be strictly disqualified.
           </div>
         </div>
-        <div className="img"></div>
+        <div className="img">
+          <div className="img1"></div>
+        </div>
       </div>
     </div>
   );

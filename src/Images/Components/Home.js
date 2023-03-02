@@ -21,9 +21,9 @@ function Home() {
             <p id="tagname">
               AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE{" "}
             </p>
+          </div>
 
-            <div></div>
-
+          <div>
             <div className="cardc1">
               <Card
                 ename="PIXEL IN THE SHADOWS"

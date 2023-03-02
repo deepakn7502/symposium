@@ -1,4 +1,4 @@
-.navbar1 {
+.navbar {
   height: 600px;
   width: 100%;
   background-color: blueviolet;
@@ -8,11 +8,11 @@
 }
 .name {
   background-color: aqua;
-  height: 30%;
+  height: 15%;
   width: 100%;
 }
 .container {
-  height: 70%;
+  height: 85%;
   width: 100%;
   background-color: cornsilk;
 }
@@ -20,17 +20,17 @@
 .guide {
   height: 100%;
   background-color: brown;
+
   width: 60%;
-  display: flex;
   float: left;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .img {
   height: 100%;
-  background-color: yellow;
-  float: right;
+  background-color: white;
 }
 .guide1 {
   height: 90%;
