@@ -10,7 +10,7 @@
   background-attachment: local;  */
 
   overflow: scroll;
-  
+ 
 
   /* background-color: black;
   visibility: hidden;  
@@ -29,11 +29,12 @@
   }
 
 
-.main .header {
+.header {
   height: auto;
   width: 100%;
   display: flex;
   align-items: center;
+  
 }
 
 .main .content {
@@ -67,7 +68,7 @@
   -webkit-text-fill-color: transparent;
 
   animation: fadeIn-title 3s , shine 3s infinite linear;
-  opacity: 1;
+  
   animation-delay: 10s;
   transition: 0s;
 
@@ -104,6 +105,7 @@
   align-items: center;
   justify-content: space-around;
   margin: 100px auto;
+  /* opacity:0; */
 
   
   /* animation: fadeIn-card1 8s;
@@ -122,6 +124,7 @@
   align-items: center;
   justify-content: space-around;
   margin: 100px auto;
+  /* opacity:0; */
 
 
   /* animation: fadeIn-card2 8s;

@@ -13,13 +13,27 @@ import img4 from "../Images/card1.jpg";
 import img5 from "../Images/card1.jpg";
 
 function Home() {
+
+  const [loaded, setLoaded] = useState(false);
+
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 10000);
+  }, []);
+
+
   return (
     <div className="home">
       <div className="main">
         <video autoPlay muted id="video">
           <source src={backgroundVideo} type="video/mp4" />
         </video>
-        <div className="header">
+
+        { loaded && 
+        <div>
+          <div className="header">
           <div className="logo">
             <img src={logo} alt="" width="auto" height="100px" />
           </div>
@@ -31,37 +45,42 @@ function Home() {
             </p>
           </div>
         </div>
-
+        
         <div className="cardc1">
-          <Card
-            ename="PIXEL IN THE SHADOWS (DALL-E AI)"
-            tagline="DEII EPUDRAA KAILA VANDHUTU"
-            img={img1}
-          />
-          <Card
-            ename="SHERLOCK CODES"
-            tagline="DEII EPUDRAA KAILA VANDHUTU"
-            img={img2}
-          />
-          <Card
-            ename="CRACK THE CASE"
-            tagline="DEII EPUDRAA KAILA VANDHUTU"
-            img={img3}
-          />
-        </div>
+        <Card
+          ename="PIXEL IN THE SHADOWS (DALL-E AI)"
+          tagline="DEII EPUDRAA KAILA VANDHUTU"
+          img={img1}
+        />
+        <Card
+          ename="SHERLOCK CODES"
+          tagline="DEII EPUDRAA KAILA VANDHUTU"
+          img={img2}
+        />
+        <Card
+          ename="CRACK THE CASE"
+          tagline="DEII EPUDRAA KAILA VANDHUTU"
+          img={img3}
+        />
+      </div>
 
-        <div className="cardc2">
-          <Card
-            ename="FORTUNE 500"
-            tagline="Pitch it quick, make it stick - Adzap!"
-            img={img4}
-          />
-          <Card
-            ename="Yet to be decided"
-            tagline="VAI ILLANA NAI THUKITU POIDUM"
-            img={img5}
-          />
-        </div>
+      <div className="cardc2">
+        <Card
+          ename="FORTUNE 500"
+          tagline="Pitch it quick, make it stick - Adzap!"
+          img={img4}
+        />
+        <Card
+          ename="Yet to be decided"
+          tagline="VAI ILLANA NAI THUKITU POIDUM"
+          img={img5}
+        />
+      </div>
+      </div>
+        }
+        
+
+
       </div>
     </div>
   );
