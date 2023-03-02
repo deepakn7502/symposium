@@ -67,17 +67,17 @@ function Home() {
             <div className="cardc1">
               <Card
                 ename="PIXEL IN THE SHADOWS (DALL-E AI)"
-                tagline="DEII EPUDRAA KAILA VANDHUTU"
+                tagline="EXPERIENCE THE FUTURE OF INTELLIGENCE"
                 img={img1}
               />
               <Card
                 ename="SHERLOCK CODES"
-                tagline="DEII EPUDRAA KAILA VANDHUTU"
+                tagline="UNRAVEL COMPLEX PROGRAMMING PROBLEMS."
                 img={img2}
               />
               <Card
                 ename="CRACK THE CASE"
-                tagline="DEII EPUDRAA KAILA VANDHUTU"
+                tagline="UNLEASH YOUR INNER DETECTIVE"
                 img={img3}
               />
             </div>
@@ -85,12 +85,12 @@ function Home() {
             <div className="cardc2">
               <Card
                 ename="FORTUNE 500"
-                tagline="Pitch it quick, make it stick - Adzap!"
+                tagline="Pitch it quick, make it stick"
                 img={img4}
               />
               <Card
-                ename="Yet to be decided"
-                tagline="VAI ILLANA NAI THUKITU POIDUM"
+                ename="SQL MYSTERY HUNT"
+                tagline="SOLVE THE PUZZLE OF RELATIONAL DATABASES"
                 img={img5}
               />
             </div>
