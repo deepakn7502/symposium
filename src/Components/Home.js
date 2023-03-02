@@ -17,16 +17,15 @@ function Home() {
   const [header, setheader] = useState(false);
 
   const [cards, setcards] = useState(false);
-  
+
   const videoRef = useRef(null);
   const audioRef = useRef(null);
 
   useEffect(() => {
-      // play video and audio together
-      videoRef.current.play();
-      audioRef.current.play();
-    }, []);
-
+    // play video and audio together
+    videoRef.current.play();
+    audioRef.current.play();
+  }, []);
 
   useEffect(() => {
     setTimeout(() => {
@@ -41,17 +40,23 @@ function Home() {
   return (
     <div className="home">
       <div className="main">
-        <video ref={videoRef} src={backgroundVideo} autoPlay muted  type="video/mp4" id="video" />     
-        <audio ref={audioRef} src={bgm} autostart="true" id="audio"/>    
-        
-        <div className="header">
-              <div className="logo">
-                <img src={logo} alt="" width="auto" height="100px" />
-              </div>
+        <video
+          ref={videoRef}
+          src={backgroundVideo}
+          autoPlay
+          muted
+          type="video/mp4"
+          id="video"
+        />
+        <audio ref={audioRef} src={bgm} autostart="true" id="audio" />
 
-        {header && (
-          <div>
-          
+        <div className="header">
+          <div className="logo">
+            <img src={logo} alt="" width="auto" height="100px" />
+          </div>
+
+          {header && (
+            <div>
               <div className="content">
                 <p id="name">NOIR ON CAMPUS</p>
                 <p id="tagname">
@@ -59,9 +64,8 @@ function Home() {
                 </p>
               </div>
             </div>
-         
-        )}
- </div>
+          )}
+        </div>
         {cards && (
           <div>
             <div className="cardc1">
