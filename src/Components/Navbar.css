@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ewert&display=swap");
 
 .navbar {
-  background: url("../Images/bgguide.jpg");
+  background-image: url("../Images/bgguide.jpg");
   height: 600px;
   width: 100%;
   background-color: blueviolet;
