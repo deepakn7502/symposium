@@ -6,10 +6,11 @@ import Card from "./Card";
 import FlipPage from "react-flip-page";
 import backgroundVideo from "../Images/bg.mp4";
 
-import img1 from "../Images/card1.jpg";
-import img2 from "../Images/card1.jpg";
-import img3 from "../Images/card1.jpg";
-import img4 from "../Images/card1.jpg";
+
+import img1 from "../Images/dalleai.jpg";
+import img2 from "../Images/crack.jpg";
+import img3 from "../Images/coder.jpg";
+import img4 from "../Images/fortune500.jpg";
 import img5 from "../Images/card1.jpg";
 
 function Home() {
@@ -78,9 +79,6 @@ function Home() {
       </div>
       </div>
         }
-        
-
-
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ewert&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
 
 
 .card {
@@ -13,10 +14,10 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  background: url("../Images/card1.jpg") no-repeat;
+  background: url("../Images/book1.png") no-repeat;
   background-size: cover;
   transition: all 0.1s ease;
-  font-family: "Ewert", cursive;
+  font-family: 'Shantell Sans', cursive;
 }
 .sneaaker-img {
   position: relative;
@@ -72,9 +73,9 @@
  .title {
   font-size: 35px;
   text-align: center;
-  color: white;
+  color: black;
 }
 .card .tag {
-  color: white;
+  color: black;
   font-size: 20px;
 }
