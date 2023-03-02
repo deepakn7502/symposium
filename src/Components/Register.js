@@ -130,8 +130,7 @@ function Register() {
       <Button variant="contained" onClick={uploadData}>
         Submit
       </Button>
-    <Card />
-          </div>
+    </div>
   );
 }
 
