@@ -4,11 +4,11 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="name">PIXEL IN THE SHADOWS (DALL-E AI)</div>
+      <div className="name">Heloo</div>
       <div className="container">
         <div className="guide">
           <div className="guide1">
-            <p className="gt"> GUIDELINES</p> <p>• One team per college.<br></br> • Each team will
+            <p> GUIDELINES</p>• One team per college.<br></br> • Each team will
             be given a topic ,where the two different company's output or
             products will be given.
             <br></br>• Your team has to infuse or integrate both the products of
@@ -31,7 +31,7 @@ function Navbar() {
             (video) and interference during the recording is not appreciated.
             <br></br> • The about mentioned are some major etiquette to be
             followed. <br></br>• Team which doesn't stick to the above mentioned
-            points will be strictly disqualified.</p>
+            points will be strictly disqualified.
           </div>
         </div>
         <div className="img">
