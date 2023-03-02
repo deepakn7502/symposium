@@ -1,15 +1,37 @@
-.home {
+.main {
   height: 100vh;
   width: 100vw;
-  background-image: url("../Images/room.jpg");
+
+  /* background-image: url("../Images/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   overflow: auto;
+  background-attachment: local;  */
+
+  overflow: scroll;
+
+  /* background-color: black;
+  visibility: hidden;  
+  z-index: 9999; 
+  transition: opacity 1s ease-in-out; 
+  transition: all 0.1s ease; */
 }
 
-.home .header {
+#video {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+}
+
+#audio {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+}
+
+.header {
   height: auto;
   width: 100%;
   display: flex;
@@ -17,6 +39,12 @@
 }
 
 .home .content {
+}
+.main .logo {
+  animation: fadeIn-title 3s;
+}
+
+.main .content {
   width: 100%;
   height: auto;
   text-align: center;
@@ -31,26 +59,24 @@
   letter-spacing: 5px !important;
   /* transform: translate(-50%, -50%);  */
   /* cursor: pointer; */
+  cursor: pointer;
   text-transform: uppercase;
-}
 
-.home .content {
-  white-space: nowrap;
-  animation: typewriter 4s steps(47) 0.5s 1 normal both;
-}
-.home .content {
   padding: 10px;
   background: linear-gradient(
     to right,
     hsl(0, 0%, 30%) 0%,
     hsl(0, 0%, 100%) 50%,
-    hsl(0, 26%, 7%) 80%,
+    hsl(0, 0%, 30%) 60%,
+    hsl(0, 0%, 100%) 90%,
     hsl(0, 0%, 30%) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 3s infinite linear;
+
+  animation: fadeIn-title 3s, shine 3s infinite linear;
+  /* transition: 2s; */
 }
 
 .content p:nth-child(1) {
@@ -103,27 +129,97 @@
 
 .home .name {
   margin: 0 auto;
+}
+.cardc1 {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: auto;
   align-items: center;
-  right: 50%;
-  color: black;
+  justify-content: space-around;
+  margin: 100px auto;
+
+  animation: fadeIn-card1 3s;
+  transition: 1s;
 }
 
 .name p {
   font-size: 30px;
 }
+.cardc2 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: space-around;
+  margin: 100px auto;
 
-@keyframes startup {
+  animation: fadeIn-card2 3s;
+
+  transition: 2s;
+}
+
+@keyframes shine {
   0% {
-    transform: translateY(100%);
+    background-position: 0;
   }
-
-  50% {
-    transform: translateY(50%);
+  60% {
+    background-position: 600px;
   }
-
   100% {
-    transform: translateY(0%);
+    background-position: 600px;
   }
 }
+
+@keyframes fadeIn-title {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn-card1 {
+  0% {
+    opacity: 0;
+    margin: 350px auto;
+  }
+  100% {
+    opacity: 1;
+    margin: 150px auto;
+  }
+}
+@keyframes fadeIn-card2 {
+  0% {
+    opacity: 0;
+    margin: 400px auto;
+  }
+  100% {
+    opacity: 1;
+    margin: 250px auto;
+  }
+}
+
+/* 
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    background-color: black;
+    visibility: hidden;  
+    z-index: 9999; 
+    transition: opacity 1s ease-in-out; 
+  }
+  
+  .overlay.active {
+    opacity: 0; 
+    visibility: hidden;
+    z-index: 9999; 
+  }
+   */
