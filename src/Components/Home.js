@@ -55,7 +55,7 @@ function Home() {
               <div className="content">
                 <p id="name">NOIR ON CAMPUS</p>
                 <p id="tagname">
-                  AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE{" "}
+                  AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE
                 </p>
               </div>
             </div>

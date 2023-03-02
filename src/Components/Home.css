@@ -26,6 +26,7 @@
   position: fixed;
   z-index: -1;
   width: 100%;
+
   }
 
 #audio {
@@ -93,6 +94,8 @@
 .content p:nth-child(2) {
   font-size: 25px;
 }
+
+
 
 @keyframes shine {
   0% {
