@@ -5,6 +5,7 @@ import logo from "../Images/lg.png";
 import Card from "./Card";
 import FlipPage from "react-flip-page";
 import backgroundVideo from "../Images/bg.mp4";
+import bgm from "../Images/bgm.mp3";
 
 import img1 from "../Images/dalleai.jpg";
 import img2 from "../Images/crack.jpg";
@@ -16,6 +17,16 @@ function Home() {
   const [header, setheader] = useState(false);
 
   const [cards, setcards] = useState(false);
+  
+  const videoRef = useRef(null);
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+      // play video and audio together
+      videoRef.current.play();
+      audioRef.current.play();
+    }, []);
+
 
   useEffect(() => {
     setTimeout(() => {
@@ -30,9 +41,9 @@ function Home() {
   return (
     <div className="home">
       <div className="main">
-        <video autoPlay muted id="video">
-          <source src={backgroundVideo} type="video/mp4" />
-        </video>
+        <video ref={videoRef} src={backgroundVideo} autoPlay muted  type="video/mp4" id="video" />     
+        <audio ref={audioRef} src={bgm} autostart="true" id="audio"/>    
+        
         <div className="header">
               <div className="logo">
                 <img src={logo} alt="" width="auto" height="100px" />
