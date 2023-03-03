@@ -91,7 +91,7 @@ function Register() {
           </div>
         </div>
       </div>
-      <div className="inputs-container">
+      {/* <div className="inputs-container">
         <div className="input-field">
           <TextField
             onChange={(e) => {
@@ -152,19 +152,19 @@ function Register() {
             />
           </Button>
         </div>
-      </div>
+      </div> */}
 
       {/* <Button variant="contained" onClick={getData}>Get data</Button>
       <Button variant="contained" onClick={uploadData}>Upload</Button> */}
 
       {/* <Button onClick={uploadImage}>Upload Image</Button> */}
 
-      <Button variant="contained" onClick={uploadImage}>
+      {/* <Button variant="contained" onClick={uploadImage}>
         Upload Image
       </Button>
       <Button variant="contained" onClick={uploadData}>
         Submit
-      </Button>
+      </Button> */}
     </div>
   );
 }
