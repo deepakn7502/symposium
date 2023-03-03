@@ -10,7 +10,7 @@
   overflow: auto;
   background-attachment: local;  */
 
-  overflow: scroll;
+  /* overflow: scroll; */
 
   /* background-color: black;
   visibility: hidden;  
@@ -19,16 +19,22 @@
   transition: all 0.1s ease; */
 }
 
-.home {
-  /* background-image: url("../Images/bg.mp4"); */
+
+
+.main .video-container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
-.main #video {
-  position: fixed;
-  z-index: -1;
+.video-container video {
   width: 100%;
-  top: 0;
-  left: 0;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 
 #audio {
@@ -37,15 +43,13 @@
   width: 100%;
 }
 
-.header {
+.main .header {
   height: auto;
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.home .content {
-}
 .main .logo {
   animation: fadeIn-title 3s;
 }

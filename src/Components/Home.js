@@ -17,16 +17,15 @@ function Home() {
   const [header, setheader] = useState(false);
 
   const [cards, setcards] = useState(false);
-  
+
   const videoRef = useRef(null);
   const audioRef = useRef(null);
 
   useEffect(() => {
-      // play video and audio together
-      videoRef.current.play();
-      audioRef.current.play();
-    }, []);
-
+    // play video and audio together
+    videoRef.current.play();
+    // audioRef.current.play();
+  }, []);
 
   useEffect(() => {
     setTimeout(() => {
@@ -39,64 +38,68 @@ function Home() {
   }, []);
 
   return (
-    <div className="home">
-      <div className="main">
-        <video ref={videoRef} src={backgroundVideo} autoPlay muted  type="video/mp4" id="video" />     
-        <audio ref={audioRef} src={bgm} autostart="true" id="audio"/>    
-        
-        <div className="header">
-              <div className="logo">
-                <img src={logo} alt="" width="auto" height="100px" />
-              </div>
+    <div className="main">
+      <div className="video-container">
+        <video
+          ref={videoRef}
+          src={backgroundVideo}
+          autoPlay
+          muted
+          type="video/mp4"
+        />
+        {/* <audio ref={audioRef} src={bgm} autostart="true" id="audio" /> */}
+      </div>
+
+      <div className="header">
+        <div className="logo">
+          <img src={logo} alt="" width="auto" height="100px" />
+        </div>
 
         {header && (
           <div>
-          
-              <div className="content">
-                <p id="name">NOIR ON CAMPUS</p>
-                <p id="tagname">
-                  AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE{" "}
-                </p>
-              </div>
-            </div>
-         
-        )}
- </div>
-        {cards && (
-          <div>
-            <div className="cardc1">
-              <Card
-                ename="PIXEL IN THE SHADOWS (DALL-E AI)"
-                tagline="EXPERIENCE THE FUTURE OF INTELLIGENCE"
-                img={img1}
-              />
-              <Card
-                ename="SHERLOCK CODES"
-                tagline="UNRAVEL COMPLEX PROGRAMMING PROBLEMS."
-                img={img2}
-              />
-              <Card
-                ename="CRACK THE CASE"
-                tagline="UNLEASH YOUR INNER DETECTIVE"
-                img={img3}
-              />
-            </div>
-
-            <div className="cardc2">
-              <Card
-                ename="FORTUNE 500"
-                tagline="Pitch it quick, make it stick"
-                img={img4}
-              />
-              <Card
-                ename="SQL MYSTERY HUNT"
-                tagline="SOLVE THE PUZZLE OF RELATIONAL DATABASES"
-                img={img5}
-              />
+            <div className="content">
+              <p id="name">NOIR ON CAMPUS</p>
+              <p id="tagname">
+                AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE{" "}
+              </p>
             </div>
           </div>
         )}
       </div>
+      {cards && (
+        <div>
+          <div className="cardc1">
+            <Card
+              ename="PIXEL IN THE SHADOWS (DALL-E AI)"
+              tagline="EXPERIENCE THE FUTURE OF INTELLIGENCE"
+              img={img1}
+            />
+            <Card
+              ename="SHERLOCK CODES"
+              tagline="UNRAVEL COMPLEX PROGRAMMING PROBLEMS."
+              img={img2}
+            />
+            <Card
+              ename="CRACK THE CASE"
+              tagline="UNLEASH YOUR INNER DETECTIVE"
+              img={img3}
+            />
+          </div>
+
+          <div className="cardc2">
+            <Card
+              ename="FORTUNE 500"
+              tagline="Pitch it quick, make it stick"
+              img={img4}
+            />
+            <Card
+              ename="SQL MYSTERY HUNT"
+              tagline="SOLVE THE PUZZLE OF RELATIONAL DATABASES"
+              img={img5}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
