@@ -164,6 +164,7 @@ function Register() {
       </Button>
       <Button variant="contained" onClick={uploadData}>
         Submit
+<<<<<<< HEAD
       </Button> */}
     </div>
   );
