@@ -1,22 +1,8 @@
-/* .register .background-img {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-} */
-
 .register {
   height: 100vh;
   width: 100vw;
-  background-image: url("../Images/full_template.jpg");
+  /* background-image: url("../Images/full_template.jpg"); */
+  background: url("../Images/bgguide.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -33,13 +19,6 @@
   flex-wrap: wrap;
 }
 
-/* .inputs-container .input-field {
-  height: fit-content;
-  width: 100%;
-  max-width: 500px;
-}
-*/
-
 .input-field .MuiTextField-root {
   background-color: white;
   margin: 30px auto;
@@ -47,4 +26,167 @@
   align-items: center;
   width: 90%;
   border-radius: 7px;
+}
+
+.navbar1 {
+}
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ewert&display=swap");
+
+.navbar {
+  height: 600px;
+  width: 100%;
+  position: sticky;
+  z-index: 10;
+  visibility: visible;
+}
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 800px;
+}
+.name {
+  background-color: aqua;
+  height: 30%;
+  width: 100%;
+  text-align: center;
+
+  /* position: absolute;
+  top: 10%;
+  left: 50%; */
+
+  color: hsl(0, 0%, 28%);
+  font-weight: bold !important;
+  font-family: monospace;
+  letter-spacing: 5px !important;
+  /* transform: translate(-50%, -50%);  */
+  cursor: pointer;
+  text-transform: uppercase;
+
+  padding: 10px;
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 30%) 0%,
+    hsl(0, 0%, 100%) 50%,
+    hsl(0, 0%, 30%) 60%,
+    hsl(0, 0%, 100%) 90%,
+    hsl(0, 0%, 30%) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: fadeIn-title 3s, shine 3s infinite linear;
+  font-size: 75px;
+}
+.container {
+  height: 100%;
+  padding-bottom: 50px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guide1 {
+  height: 100%;
+  width: 95%;
+  max-width: 700px;
+  background: url("../Images/g1.jpg") no-repeat;
+  background-size: cover;
+  background-repeat: repeat;
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  line-height: 35px;
+  font-weight: 600;
+  font-family: "Shantell Sans", cursive;
+
+  position: relative;
+  background: url("../Images/g1.jpg") 0;
+  padding: 1em;
+  width: 50%;
+}
+.gui {
+  padding: 10%;
+}
+.guide1:before,
+.guide1:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  background-image: url("../Images/g1.jpg") no-repeat;
+  background-size: cover;
+  background-repeat: repeat;
+  -webkit-clip-path: polygon(
+    1% 0%,
+    4% 100%,
+    9% 0%,
+    13% 100%,
+    19% 1%,
+    21% 100%,
+    26% 5%,
+    30% 100%,
+    36% 2%,
+    43% 100%,
+    50% 1%,
+    52% 100%,
+    61% 0%,
+    69% 94%,
+    70% 0%,
+    76% 100%,
+    81% 0%,
+    84% 100%,
+    91% 0%,
+    97% 100%,
+    99% 3%
+  );
+}
+
+.guide1:before {
+  background-color: #2e3537;
+  top: 0;
+}
+
+.guide1:after {
+  background: url("../Images/g1.jpg") 0;
+}
+
+p {
+  text-align: center;
+  font-size: 40px;
+}
+.guide1::-webkit-scrollbar {
+  width: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+.gt {
+  font-family: "Ewert", cursive;
+  color: #880808;
+  font-size: 50px;
+}
+
+.button-cont {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+}
+
+.button-cont .MuiButton-root {
+  background-color: #880808;
 }
