@@ -83,8 +83,9 @@
 }
 .container {
   height: 100%;
-  width: 80%;
   padding-bottom: 50px;
+  width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,8 +93,9 @@
 
 .guide1 {
   height: 100%;
-  width: 60%;
-  background-image: url("../Images/g1.jpg") no-repeat;
+  width: 95%;
+  max-width: 700px;
+  background: url("../Images/g1.jpg") no-repeat;
   background-size: cover;
   background-repeat: repeat;
 
