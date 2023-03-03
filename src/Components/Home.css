@@ -12,6 +12,8 @@
 
   overflow: scroll;
 
+  /* cursor: url(../Images/gls1.png),auto; */
+
   /* background-color: black;
   visibility: hidden;  
   z-index: 9999; 
@@ -40,8 +42,6 @@
   align-items: center;
 }
 
-.home .content {
-}
 .main .logo {
   animation: fadeIn-title 3s;
 }
