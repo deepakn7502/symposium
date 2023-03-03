@@ -7,4 +7,3 @@ function Navbar() {
 
 export default Navbar;
 
-//how to make navbar disappear in mobile view in css?
