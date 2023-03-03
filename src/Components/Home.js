@@ -30,11 +30,11 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setheader(true);
-    }, 10000);
+    }, 9500);
 
     setTimeout(() => {
       setcards(true);
-    }, 12000);
+    }, 11000);
   }, []);
 
   return (
