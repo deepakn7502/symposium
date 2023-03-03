@@ -56,11 +56,13 @@ function Home() {
         </div>
 
         {header && (
-          <div>
+          <div className="content">
+            <h1>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h1>
             <div className="content">
+              
               <p id="name">NOIR ON CAMPUS</p>
               <p id="tagname">
-                AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE{" "}
+                AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM {" "}
               </p>
             </div>
           </div>

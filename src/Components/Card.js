@@ -1,5 +1,6 @@
 import "./Card.css";
 import React, { useState, useRef } from "react";
+import { Avatar } from "@mui/material";
 export default function Card({ ename, tagline, img }) {
   return (
     <div className="card">
@@ -13,7 +14,7 @@ export default function Card({ ename, tagline, img }) {
             window.location.pathname = "/register";
           }}
         >
-          COMPETE HERE
+          COMPETE HERE          
         </button>
       </div>
     </div>

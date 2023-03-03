@@ -91,7 +91,7 @@
 
 .content p:nth-child(1) {
   font-size: 100px;
-  word-spacing: -50px;
+  word-spacing: -25px;
 }
 
 .content p:nth-child(2) {
