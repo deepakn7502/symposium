@@ -105,7 +105,7 @@
 }
 .container {
   height: 100%;
-  width: 80%;
+  width: 100%;
 
   display: flex;
   align-items: center;
@@ -125,7 +125,8 @@
 
 .guide1 {
   height: 100%;
-  width: 60%;
+  width: 95%;
+  max-width: 700px;
   background: url("../Images/g1.jpg") no-repeat;
   background-size: cover;
   border-radius: 50px;
