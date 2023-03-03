@@ -90,6 +90,16 @@ function Register() {
             </div>
           </div>
         </div>
+
+        <div className="button-cont">
+          <Button
+            variant="contained"
+            
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfzSHHxDaQ-yXB20rkY4AzKC5ihEF6zvpMpQFsP2dbsRMEcPA/viewform"
+          >
+            Register
+          </Button>
+        </div>
       </div>
       {/* <div className="inputs-container">
         <div className="input-field">
@@ -161,14 +171,7 @@ function Register() {
 
       {/* <Button variant="contained" onClick={uploadImage}>
         Upload Image
-      </Button>
-      <Button variant="contained" onClick={uploadData}>
-        Submit
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0b7aec9931510a99f7e6ab3cea2f2e9429ebaf4e
-      </Button> */}
+      </Button>*/}
     </div>
   );
 }
