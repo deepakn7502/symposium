@@ -7,8 +7,6 @@ import { collection, doc } from "firebase/firestore";
 import { db, storage } from "../firebase-config";
 // import image from "../Images/template.jpg";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import image from "../Images/template.jpg";
-import Card from "./Card";
 
 function Register() {
   // const [color, setColor] = useState("warning");
@@ -166,6 +164,10 @@ function Register() {
       </Button>
       <Button variant="contained" onClick={uploadData}>
         Submit
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0b7aec9931510a99f7e6ab3cea2f2e9429ebaf4e
       </Button> */}
     </div>
   );
