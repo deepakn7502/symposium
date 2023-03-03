@@ -19,8 +19,6 @@
   transition: all 0.1s ease; */
 }
 
-
-
 .main .video-container {
   height: 100%;
   width: 100%;
@@ -29,6 +27,7 @@
   bottom: 0;
   z-index: -1;
   overflow: hidden;
+  visibility: hidden;
 }
 
 .video-container video {
@@ -47,8 +46,6 @@
 .main .header {
   height: auto;
   width: 100%;
-  display: flex;
-  align-items: center;
 }
 
 .main .logo {
@@ -92,7 +89,7 @@
 
 .content p:nth-child(1) {
   font-size: 100px;
-  word-spacing: -50px;
+  word-spacing: -25px;
 }
 
 .content p:nth-child(2) {
@@ -234,3 +231,39 @@
     z-index: 9999; 
   }
    */
+
+.main .background-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../Images/background-img-symp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  /* animation: backgroundmotion 9s ease-in-out; */
+}
+
+@keyframes backgroundmotion {
+  0% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 750px) {
+  .main .video-container {
+    visibility: hidden;
+  }
+
+  .main {
+    background-image: url("../Images/background-img-symp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}

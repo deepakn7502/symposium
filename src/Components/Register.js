@@ -55,7 +55,10 @@ function Register() {
     <div className="register">
       <div className="navbar1">
         <div className="navbar">
-          <div className="name">PIXEL IN THE SHADOWS (DALL-E AI)</div>
+          <div className="name">
+            PIXEL IN THE SHADOWS
+            <br /> (DALL-E AI)
+          </div>
           <div className="cont">
             <div className="container">
               <div className="guide1">
@@ -74,8 +77,8 @@ function Register() {
                     </li>{" "}
                     <li>
                       For example, if the topic is Dairy Milk and Boat Earbuds:
-                      U have to explain how u combine both the products into an
-                      interesting product and make an advertisement regarding
+                      U have to explain how you combine both the products into
+                      an interesting product and make an advertisement regarding
                       the product.
                     </li>
                     <li>
@@ -124,7 +127,6 @@ function Register() {
         <div className="button-cont">
           <Button
             variant="contained"
-            
             href="https://docs.google.com/forms/d/e/1FAIpQLSfzSHHxDaQ-yXB20rkY4AzKC5ihEF6zvpMpQFsP2dbsRMEcPA/viewform"
           >
             Register

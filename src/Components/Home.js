@@ -26,35 +26,31 @@ function Home() {
   useEffect(() => {
     // play video and audio together
     videoRef.current.play();
-    // audioRef.current.play();
+    audioRef.current.play();
   }, []);
 
   useEffect(() => {
     setTimeout(() => {
       setheader(true);
-    }, 9500);
+    }, 100);
 
     setTimeout(() => {
       setcards(true);
-    }, 11000);
+    }, 100);
   }, []);
 
   const [backgroundVideo, setbackgroundVideo] = useState();
 
-  useEffect(() => {
-    console.log(backgroundVideo);
-    getDownloadURL(ref(storage, "videos/bg.mp4")).then((url) => {
-      setbackgroundVideo(url);
-    });
-  }, [backgroundVideo]);
+  // useEffect(() => {
+  //   console.log(backgroundVideo);
+  //   getDownloadURL(ref(storage, "videos/bg.mp4")).then((url) => {
+  //     setbackgroundVideo(url);
+  //   });
+  // }, [backgroundVideo]);
 
-  if (backgroundVideo) {
-    console.log(true);
-  } else {
-    console.log(false);
-  }
   return (
     <div className="main">
+      <div className="background-container"></div>
       <div className="video-container">
         <video
           ref={videoRef}
@@ -63,21 +59,19 @@ function Home() {
           muted
           type="video/mp4"
         />
-        {/* <audio ref={audioRef} src={bgm} autostart="true" id="audio" /> */}
+        <audio ref={audioRef} src={bgm} autostart="true" id="audio" />
       </div>
 
       <div className="header">
         <div className="logo">
           <img src={logo} alt="" width="auto" height="100px" />
         </div>
-
         {header && (
-          <div>
-            <div className="content">
+          <div className="content">
+            <h1>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h1>
+            <div>
               <p id="name">NOIR ON CAMPUS</p>
-              <p id="tagname">
-                AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE{" "}
-              </p>
+              <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM</p>
             </div>
           </div>
         )}
