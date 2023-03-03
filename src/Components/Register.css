@@ -69,10 +69,11 @@
 
   height: 800px;
 }
-.name {
+.navbar .name {
   background-color: aqua;
   height: 30%;
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   text-align: center;
 
   /* position: absolute;
@@ -101,8 +102,10 @@
   -webkit-text-fill-color: transparent;
 
   animation: fadeIn-title 3s, shine 3s infinite linear;
-  font-size: 75px;
+  font-size: 500%;
+  text-overflow: clip;
 }
+
 .container {
   height: 100%;
   width: 100%;
@@ -180,10 +183,6 @@ p {
   width: 1em;
 }
 
-@media screen and (max-width: 1024px) {
-  
-}
-
 .gt {
   font-family: "Ewert", cursive;
   color: #880808;
@@ -199,6 +198,12 @@ p {
   bottom: 10px;
 }
 
-.button-cont .MuiButton-root{
+.button-cont .MuiButton-root {
   background-color: #880808;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar .name {
+    font-size: 300%;
+  }
 }
