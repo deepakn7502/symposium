@@ -1,19 +1,15 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Home.css";
-import { Button, TextField } from "@mui/material";
 import logo from "../Images/lg.png";
 import Card from "./Card";
-import FlipPage from "react-flip-page";
-// import backgroundVideo from "../Images/bg.mp4";
+import backgroundVideo from "../Images/bg.mp4";
 import bgm from "../Images/bgm.mp3";
-import { storage } from "../firebase-config";
 
 import img1 from "../Images/dalleai.jpg";
 import img2 from "../Images/crack.jpg";
 import img3 from "../Images/coder.jpg";
 import img4 from "../Images/fortune500.jpg";
 import img5 from "../Images/card1.jpg";
-import { getDownloadURL, ref } from "firebase/storage";
 
 function Home() {
   const [header, setheader] = useState(false);
@@ -32,14 +28,14 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setheader(true);
-    }, 100);
+    }, 10000);
 
     setTimeout(() => {
       setcards(true);
-    }, 100);
+    }, 11000);
   }, []);
 
-  const [backgroundVideo, setbackgroundVideo] = useState();
+  // const [backgroundVideo, setbackgroundVideo] = useState();
 
   // useEffect(() => {
   //   console.log(backgroundVideo);
@@ -80,19 +76,22 @@ function Home() {
         <div>
           <div className="cardc1">
             <Card
-              ename="PIXEL IN THE SHADOWS (DALL-E AI)"
+              ename="PIXEL IN THE SHADOWS (MIDJOURNEY)"
               tagline="EXPERIENCE THE FUTURE OF INTELLIGENCE"
               img={img1}
+              event="pixel"
             />
             <Card
               ename="SHERLOCK CODES"
               tagline="UNRAVEL COMPLEX PROGRAMMING PROBLEMS."
               img={img2}
+              event="sherlock"
             />
             <Card
-              ename="CRACK THE CASE"
+              ename="CRACK TO BUILD"
               tagline="UNLEASH YOUR INNER DETECTIVE"
               img={img3}
+              event="crack"
             />
           </div>
 
@@ -101,11 +100,13 @@ function Home() {
               ename="FORTUNE 500"
               tagline="Pitch it quick, make it stick"
               img={img4}
+              event="fortune"
             />
             <Card
               ename="SQL MYSTERY HUNT"
               tagline="SOLVE THE PUZZLE OF RELATIONAL DATABASES"
               img={img5}
+              event="sql"
             />
           </div>
         </div>

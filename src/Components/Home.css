@@ -1,7 +1,11 @@
 .main {
   height: 100vh;
   width: 100vw;
-
+  background-image: url("../Images/background-img-symp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   /* background-image: url("../Images/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -232,7 +236,7 @@
   }
    */
 
-.main .background-container {
+/* .main .background-container {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -243,27 +247,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  /* animation: backgroundmotion 9s ease-in-out; */
-}
+  animation: backgroundmotion 9s ease-in-out;
+} */
 
-@keyframes backgroundmotion {
-  0% {
-    transform: scale(3);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @media screen and (max-width: 750px) {
   .main .video-container {
     visibility: hidden;
   }
 
   .main {
-    background-image: url("../Images/background-img-symp.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
   }
 }
