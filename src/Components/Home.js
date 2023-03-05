@@ -67,7 +67,7 @@ function Home() {
             <h1>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h1>
             <div>
               <p id="name">NOIR ON CAMPUS</p>
-              <p id="tagname">AN INTERCOLLEGIATE </p>
+              <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
             </div>
           </div>
         )}

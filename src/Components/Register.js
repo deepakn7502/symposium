@@ -187,7 +187,7 @@ function Register() {
     } else if (event === "fortune") {
       return (
         <ul>
-          <li>Five Members per team.</li>
+          <li>3 Members per team.</li>
           <li>One team per college.</li>
 
           <li>
@@ -288,19 +288,31 @@ function Register() {
               <div className="guide1">
                 <p> GUIDELINES</p>
                 <div className="gui">{returnInstructions()}</div>
+                <div className="button-cont">
+                  <Button
+                    variant="contained"
+                    onClick={() => {
+                      window.location.href = link;
+                    }}
+                  >
+                    Register
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="button-cont">
-          <button
+        {/* <div className="button-cont">
+          <Button
             variant="contained"
-            onClick={(window.location.href = { link })}
+            onClick={() => {
+              window.location.href = link;
+            }}
           >
             Register
-          </button>
-        </div>
+          </Button>
+        </div> */}
       </div>
       {/* <div className="inputs-container">
         <div className="input-field">
