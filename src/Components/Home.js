@@ -76,10 +76,10 @@ function Home() {
         <div>
           <div className="cardc1">
             <Card
-              ename="PIXEL IN THE SHADOWS (MIDJOURNEY)"
-              tagline="EXPERIENCE THE FUTURE OF INTELLIGENCE"
-              img={img1}
-              event="pixel"
+              ename="SQL MYSTERY HUNT"
+              tagline="SOLVE THE PUZZLE OF RELATIONAL DATABASES"
+              img={img5}
+              event="sql"
             />
             <Card
               ename="SHERLOCK CODES"
@@ -103,10 +103,10 @@ function Home() {
               event="fortune"
             />
             <Card
-              ename="SQL MYSTERY HUNT"
-              tagline="SOLVE THE PUZZLE OF RELATIONAL DATABASES"
-              img={img5}
-              event="sql"
+              ename="PIXEL IN THE SHADOWS (MIDJOURNEY)"
+              tagline="EXPERIENCE THE FUTURE OF INTELLIGENCE"
+              img={img1}
+              event="pixel"
             />
           </div>
         </div>
