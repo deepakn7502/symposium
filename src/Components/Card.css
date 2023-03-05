@@ -19,6 +19,7 @@
   transition: all 0.1s ease;
   font-family: 'Shantell Sans', cursive;
   float: right;
+  margin: 20px 0;
 }
 .sneaaker-img {
   position: relative;
