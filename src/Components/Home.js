@@ -76,16 +76,16 @@ function Home() {
         <div>
           <div className="cardc1">
             <Card
-              ename="SQL MYSTERY HUNT"
-              tagline="SOLVE THE PUZZLE OF RELATIONAL DATABASES"
-              img={img5}
-              event="sql"
-            />
-            <Card
               ename="SHERLOCK CODES"
               tagline="UNRAVEL COMPLEX PROGRAMMING PROBLEMS."
               img={img2}
               event="sherlock"
+            />
+            <Card
+              ename="SQL MYSTERY HUNT"
+              tagline="SOLVE THE PUZZLE OF RELATIONAL DATABASES"
+              img={img5}
+              event="sql"
             />
             <Card
               ename="CRACK TO BUILD"
