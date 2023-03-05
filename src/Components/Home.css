@@ -271,7 +271,7 @@
   animation: backgroundmotion 9s ease-in-out;
 } */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .main .video-container {
     visibility: hidden;
   }
