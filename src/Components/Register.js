@@ -51,7 +51,7 @@ function Register() {
   const [link, setLink] = useState();
 
   useEffect(() => {
-    setEvent(window.localStorage.getItem("event"));
+    setEvent(window.sessionStorage.getItem("event"));
     if (event === "pixel") {
       setName("PIXEL IN THE SHADOWS (MIDJOURNEY)");
       setLink(
@@ -294,7 +294,12 @@ function Register() {
         </div>
 
         <div className="button-cont">
-          <Button>Register</Button>
+          <button
+            variant="contained"
+            onClick={(window.location.href = { link })}
+          >
+            Register
+          </button>
         </div>
       </div>
       {/* <div className="inputs-container">

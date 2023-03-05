@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import bgm from "../Images/bgm.mp3";
 
 function Audio() {

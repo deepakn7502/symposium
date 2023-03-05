@@ -11,7 +11,7 @@ export default function Card({ ename, tagline, img, event }) {
           className="purchase"
           onClick={() => {
             window.location.pathname = "/register";
-            window.localStorage.setItem("event", event);
+            window.sessionStorage.setItem("event", event);
           }}
         >
           COMPETE HERE

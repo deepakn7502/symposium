@@ -3,7 +3,7 @@ import "./Home.css";
 import logo from "../Images/lg.png";
 import Card from "./Card";
 import backgroundVideo from "../Images/bg.mp4";
-import bgm from "../Images/bgm.mp3";
+// import bgm from "../Images/bgm.mp3";
 
 import img1 from "../Images/dalleai.jpg";
 import img2 from "../Images/crack.jpg";
@@ -67,7 +67,7 @@ function Home() {
             <h1>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h1>
             <div>
               <p id="name">NOIR ON CAMPUS</p>
-              <p id="tagname">AN NATIONAL INTERCOLLEGIATE VIRTUAL SYMPOSIUM</p>
+              <p id="tagname">AN INTERCOLLEGIATE </p>
             </div>
           </div>
         )}
