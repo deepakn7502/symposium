@@ -48,6 +48,7 @@ function Register() {
   const [event, setEvent] = useState();
 
   const [name, setName] = useState();
+
   const [link, setLink] = useState();
 
   useEffect(() => {
