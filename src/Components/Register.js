@@ -286,7 +286,7 @@ function Register() {
           <div className="cont">
             <div className="container">
               <div className="guide1">
-                <p className="gt"> GUIDELINES</p>
+                <p> GUIDELINES</p>
                 <div className="gui">{returnInstructions()}</div>
               </div>
             </div>
@@ -294,9 +294,7 @@ function Register() {
         </div>
 
         <div className="button-cont">
-          <Button variant="contained" href={link}>
-            Register
-          </Button>
+          <Button>Register</Button>
         </div>
       </div>
       {/* <div className="inputs-container">

@@ -17,22 +17,22 @@ function Home() {
   const [cards, setcards] = useState(false);
 
   const videoRef = useRef(null);
-  const audioRef = useRef(null);
+  // const audioRef = useRef(null);
 
   useEffect(() => {
     // play video and audio together
     videoRef.current.play();
-    audioRef.current.play();
+    // audioRef.current.play();
   }, []);
 
   useEffect(() => {
     setTimeout(() => {
       setheader(true);
-    }, 10000);
+    }, 100);
 
     setTimeout(() => {
       setcards(true);
-    }, 11000);
+    }, 110);
   }, []);
 
   // const [backgroundVideo, setbackgroundVideo] = useState();
@@ -55,19 +55,19 @@ function Home() {
           muted
           type="video/mp4"
         />
-        <audio ref={audioRef} src={bgm} autostart="true" id="audio" />
+        {/* <audio ref={audioRef} src={bgm} autostart="true" id="audio" /> */}
       </div>
 
       <div className="header">
         <div className="logo">
-          <img src={logo} alt="" width="auto" height="100px" />
+          <img src={logo} alt="" />
         </div>
         {header && (
           <div className="content">
             <h1>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h1>
             <div>
               <p id="name">NOIR ON CAMPUS</p>
-              <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM</p>
+              <p id="tagname">AN NATIONAL INTERCOLLEGIATE VIRTUAL SYMPOSIUM</p>
             </div>
           </div>
         )}
