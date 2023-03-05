@@ -48,6 +48,7 @@ function Register() {
   const [event, setEvent] = useState();
 
   const [name, setName] = useState();
+
   const [link, setLink] = useState();
 
   useEffect(() => {
@@ -294,7 +295,7 @@ function Register() {
         </div>
 
         <div className="button-cont">
-          <Button>Register</Button>
+          <Button onClick={()=>{window.location.href=link}} >Register</Button>
         </div>
       </div>
       {/* <div className="inputs-container">
