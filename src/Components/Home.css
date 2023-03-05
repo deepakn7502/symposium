@@ -107,6 +107,7 @@
 }
 
 .content h1 {
+  width: 100%;
   font-size: 200%;
 }
 
@@ -168,7 +169,7 @@
   height: auto;
   align-items: center;
   justify-content: space-around;
-  margin: 100px auto;
+  margin: 10px auto;
 
   animation: fadeIn-card1 3s;
   transition: 1s;
@@ -282,6 +283,10 @@
   .logo img {
     width: 300px;
     height: auto;
+  }
+
+  .header .content {
+    width: 100%;
   }
 
   .content h1 {
