@@ -3,7 +3,7 @@ import "./Home.css";
 import logo from "../Images/lg.png";
 import Card from "./Card";
 import backgroundVideo from "../Images/bg.mp4";
-import bgm from "../Images/bgm.mp3";
+// import bgm from "../Images/bgm.mp3";
 
 import img1 from "../Images/dalleai.jpg";
 import img2 from "../Images/crack.jpg";
@@ -67,7 +67,7 @@ function Home() {
             <h1>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h1>
             <div>
               <p id="name">NOIR ON CAMPUS</p>
-              <p id="tagname">AN NATIONAL INTERCOLLEGIATE VIRTUAL SYMPOSIUM</p>
+              <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
             </div>
           </div>
         )}
@@ -76,16 +76,16 @@ function Home() {
         <div>
           <div className="cardc1">
             <Card
-              ename="PIXEL IN THE SHADOWS (MIDJOURNEY)"
-              tagline="EXPERIENCE THE FUTURE OF INTELLIGENCE"
-              img={img1}
-              event="pixel"
-            />
-            <Card
               ename="SHERLOCK CODES"
               tagline="UNRAVEL COMPLEX PROGRAMMING PROBLEMS."
               img={img2}
               event="sherlock"
+            />
+            <Card
+              ename="SQL MYSTERY HUNT"
+              tagline="SOLVE THE PUZZLE OF RELATIONAL DATABASES"
+              img={img5}
+              event="sql"
             />
             <Card
               ename="CRACK TO BUILD"
@@ -103,10 +103,10 @@ function Home() {
               event="fortune"
             />
             <Card
-              ename="SQL MYSTERY HUNT"
-              tagline="SOLVE THE PUZZLE OF RELATIONAL DATABASES"
-              img={img5}
-              event="sql"
+              ename="PIXEL IN THE SHADOWS (MIDJOURNEY)"
+              tagline="EXPERIENCE THE FUTURE OF INTELLIGENCE"
+              img={img1}
+              event="pixel"
             />
           </div>
         </div>

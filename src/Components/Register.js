@@ -52,7 +52,7 @@ function Register() {
   const [link, setLink] = useState();
 
   useEffect(() => {
-    setEvent(window.localStorage.getItem("event"));
+    setEvent(window.sessionStorage.getItem("event"));
     if (event === "pixel") {
       setName("PIXEL IN THE SHADOWS (MIDJOURNEY)");
       setLink(
@@ -188,7 +188,7 @@ function Register() {
     } else if (event === "fortune") {
       return (
         <ul>
-          <li>Five Members per team.</li>
+          <li>3 Members per team.</li>
           <li>One team per college.</li>
 
           <li>
@@ -289,14 +289,31 @@ function Register() {
               <div className="guide1">
                 <p> GUIDELINES</p>
                 <div className="gui">{returnInstructions()}</div>
+                <div className="button-cont">
+                  <Button
+                    variant="contained"
+                    onClick={() => {
+                      window.location.href = link;
+                    }}
+                  >
+                    Register
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="button-cont">
-          <Button onClick={()=>{window.location.href=link}} >Register</Button>
-        </div>
+        {/* <div className="button-cont">
+          <Button
+            variant="contained"
+            onClick={() => {
+              window.location.href = link;
+            }}
+          >
+            Register
+          </Button>
+        </div> */}
       </div>
       {/* <div className="inputs-container">
         <div className="input-field">
