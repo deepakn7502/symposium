@@ -26,8 +26,10 @@
   }
   
   .register-new .inputs-container-new {
+
     height: auto;
-    width: 500px;
+
+    width: 1000px;
     /* background-color: rgba(255,255,255,0.2); */
 
     max-width: 1024px;
