@@ -49,16 +49,15 @@
 }
 
 .main .header {
-  height: auto;
+  height: 300px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .header .logo {
   width: 20%;
-  height: 100%;
   animation: fadeIn-title 3s;
   display: flex;
   justify-content: center;
@@ -66,26 +65,19 @@
 
 .logo img {
   width: 90%;
-  height: auto;
+  height: 30%;
   margin: 0 auto;
 }
 
 .header .content {
-  width: 80%;
+  width: 70%;
   height: 100%;
   text-align: center;
-  font-size: 100%;
-
-  /* position: absolute;
-  top: 10%;
-  left: 50%; */
-
+  /* font-size: 100%; */
   color: hsl(0, 0%, 28%);
   font-weight: bold !important;
   font-family: monospace;
   letter-spacing: 5px !important;
-  /* transform: translate(-50%, -50%);  */
-  /* cursor: pointer; */
   cursor: pointer;
   text-transform: uppercase;
 
@@ -101,22 +93,23 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
   animation: fadeIn-title 3s, shine 3s infinite linear;
-  /* transition: 2s; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; */
 }
 
-.content h1 {
+.content #dept{
   width: 100%;
+  font-size: 150%;
+}
+
+.content #name {
   font-size: 200%;
 }
 
-.content p:nth-child(1) {
-  font-size: 800%;
-  word-spacing: -25px;
-}
-
-.content p:nth-child(2) {
+.content #tagname {
   font-size: 150%;
 }
 
@@ -270,6 +263,26 @@
   background-attachment: fixed;
   animation: backgroundmotion 9s ease-in-out;
 } */
+
+.main .header-container {
+  height: auto;
+  width: 100%;
+}
+
+.header-container .header-logo {
+  height: 100%;
+  width: 20%;
+}
+
+.header-logo img {
+  width: 95%;
+  height: auto;
+}
+.header-container .header-content {
+  color: aliceblue;
+  height: 100%;
+  width: 80%;
+}
 
 @media screen and (max-width: 850px) {
   .main .video-container {

@@ -18,7 +18,6 @@ function Home() {
 
   const videoRef = useRef(null);
   // const audioRef = useRef(null);
-  
 
   useEffect(() => {
     // play video and audio together
@@ -63,16 +62,22 @@ function Home() {
         <div className="logo">
           <img src={logo} alt="" />
         </div>
-        {header && (
-          <div className="content">
-            <h1>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h1>
-            <div>
-              <p id="name">NOIR ON CAMPUS</p>
-              <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
-            </div>
-          </div>
-        )}
+        <div className="content">
+          <p id="dept">DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</p>
+          <p id="name">XERONE'23</p>
+          <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
+        </div>
       </div>
+      {/* <div className="header-container">
+        <div className="header-logo">
+          <img src={logo} alt="" />
+        </div>
+        <div className="header-content">
+          <p>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</p>
+          <p>XERONE'23</p>
+          <p>AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
+        </div>
+      </div> */}
       {cards && (
         <div>
           <div className="cardc1">
