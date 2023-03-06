@@ -1,6 +1,6 @@
 import "./Card.css";
-import React, { useState, useRef } from "react";
-export default function Card({ ename, tagline, img }) {
+import React from "react";
+export default function Card({ ename, tagline, img, event }) {
   return (
     <div className="card">
       <h1 className="title">{ename}</h1>
@@ -11,6 +11,7 @@ export default function Card({ ename, tagline, img }) {
           className="purchase"
           onClick={() => {
             window.location.pathname = "/register";
+            window.sessionStorage.setItem("event", event);
           }}
         >
           COMPETE HERE

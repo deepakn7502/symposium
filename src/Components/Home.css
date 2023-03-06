@@ -1,7 +1,12 @@
 .main {
   height: 100vh;
   width: 100vw;
-
+  background-image: url("../Images/background-img-symp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-y: auto;
   /* background-image: url("../Images/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,8 +26,6 @@
   transition: all 0.1s ease; */
 }
 
-
-
 .main .video-container {
   height: 100%;
   width: 100%;
@@ -31,6 +34,7 @@
   bottom: 0;
   z-index: -1;
   overflow: hidden;
+  visibility: hidden;
 }
 
 .video-container video {
@@ -50,17 +54,29 @@
   height: auto;
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.main .logo {
+.header .logo {
+  width: 20%;
+  height: 100%;
   animation: fadeIn-title 3s;
+  display: flex;
+  justify-content: center;
 }
 
-.main .content {
-  width: 100%;
+.logo img {
+  width: 90%;
   height: auto;
+  margin: 0 auto;
+}
+
+.header .content {
+  width: 80%;
+  height: 100%;
   text-align: center;
+  font-size: 100%;
 
   /* position: absolute;
   top: 10%;
@@ -92,14 +108,20 @@
   /* transition: 2s; */
 }
 
+.content h1 {
+  width: 100%;
+  font-size: 200%;
+}
+
 .content p:nth-child(1) {
-  font-size: 100px;
-  word-spacing: -50px;
+  font-size: 800%;
+  word-spacing: -25px;
 }
 
 .content p:nth-child(2) {
-  font-size: 25px;
+  font-size: 150%;
 }
+
 .cardc1 {
   display: flex;
   width: 100%;
@@ -151,7 +173,7 @@
   height: auto;
   align-items: center;
   justify-content: space-around;
-  margin: 100px auto;
+  margin: 10px auto;
 
   animation: fadeIn-card1 3s;
   transition: 1s;
@@ -238,3 +260,49 @@
     z-index: 9999; 
   }
    */
+
+/* .main .background-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../Images/background-img-symp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  animation: backgroundmotion 9s ease-in-out;
+} */
+
+@media screen and (max-width: 850px) {
+  .main .video-container {
+    visibility: hidden;
+  }
+  .main .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo img {
+    width: 300px;
+    height: auto;
+  }
+
+  .header .content {
+    width: 100%;
+  }
+
+  .content h1 {
+    font-size: 100%;
+  }
+
+  .content p:nth-child(1) {
+    font-size: 350%;
+    word-spacing: -25px;
+  }
+
+  .content p:nth-child(2) {
+    font-size: 120%;
+  }
+}

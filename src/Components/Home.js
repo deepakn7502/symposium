@@ -1,19 +1,15 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Home.css";
-import { Button, TextField } from "@mui/material";
 import logo from "../Images/lg.png";
 import Card from "./Card";
-import FlipPage from "react-flip-page";
-// import backgroundVideo from "../Images/bg.mp4";
-import bgm from "../Images/bgm.mp3";
-import { storage } from "../firebase-config";
+import backgroundVideo from "../Images/bg.mp4";
+// import bgm from "../Images/bgm.mp3";
 
 import img1 from "../Images/dalleai.jpg";
 import img2 from "../Images/crack.jpg";
 import img3 from "../Images/coder.jpg";
-import img4 from "../Images/fortune500.jpg";
-import img5 from "../Images/card1.jpg";
-import { getDownloadURL, ref } from "firebase/storage";
+import img4 from "../Images/fortune-500.jpg";
+import img5 from "../Images/mystery-hunt.png";
 
 function Home() {
   const [header, setheader] = useState(false);
@@ -21,7 +17,8 @@ function Home() {
   const [cards, setcards] = useState(false);
 
   const videoRef = useRef(null);
-  const audioRef = useRef(null);
+  // const audioRef = useRef(null);
+  
 
   useEffect(() => {
     // play video and audio together
@@ -32,29 +29,25 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setheader(true);
-    }, 9500);
+    }, 100);
 
     setTimeout(() => {
       setcards(true);
-    }, 11000);
+    }, 110);
   }, []);
 
-  const [backgroundVideo, setbackgroundVideo] = useState();
+  // const [backgroundVideo, setbackgroundVideo] = useState();
 
-  useEffect(() => {
-    console.log(backgroundVideo);
-    getDownloadURL(ref(storage, "videos/bg.mp4")).then((url) => {
-      setbackgroundVideo(url);
-    });
-  }, [backgroundVideo]);
+  // useEffect(() => {
+  //   console.log(backgroundVideo);
+  //   getDownloadURL(ref(storage, "videos/bg.mp4")).then((url) => {
+  //     setbackgroundVideo(url);
+  //   });
+  // }, [backgroundVideo]);
 
-  if (backgroundVideo) {
-    console.log(true);
-  } else {
-    console.log(false);
-  }
   return (
     <div className="main">
+      <div className="background-container"></div>
       <div className="video-container">
         <video
           ref={videoRef}
@@ -68,16 +61,14 @@ function Home() {
 
       <div className="header">
         <div className="logo">
-          <img src={logo} alt="" width="auto" height="100px" />
+          <img src={logo} alt="" />
         </div>
-
         {header && (
-          <div>
-            <div className="content">
+          <div className="content">
+            <h1>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h1>
+            <div>
               <p id="name">NOIR ON CAMPUS</p>
-              <p id="tagname">
-                AN INTERCOLLEGIATE SYMPOSIUM ON CRIME AND CULTURE{" "}
-              </p>
+              <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
             </div>
           </div>
         )}
@@ -86,19 +77,22 @@ function Home() {
         <div>
           <div className="cardc1">
             <Card
-              ename="PIXEL IN THE SHADOWS (DALL-E AI)"
-              tagline="EXPERIENCE THE FUTURE OF INTELLIGENCE"
-              img={img1}
-            />
-            <Card
               ename="SHERLOCK CODES"
               tagline="UNRAVEL COMPLEX PROGRAMMING PROBLEMS."
               img={img2}
+              event="sherlock"
             />
             <Card
-              ename="CRACK THE CASE"
+              ename="SQL MYSTERY HUNT"
+              tagline="SOLVE THE PUZZLE OF RELATIONAL DATABASES"
+              img={img5}
+              event="sql"
+            />
+            <Card
+              ename="CRACK TO BUILD"
               tagline="UNLEASH YOUR INNER DETECTIVE"
               img={img3}
+              event="crack"
             />
           </div>
 
@@ -107,11 +101,13 @@ function Home() {
               ename="FORTUNE 500"
               tagline="Pitch it quick, make it stick"
               img={img4}
+              event="fortune"
             />
             <Card
-              ename="SQL MYSTERY HUNT"
-              tagline="SOLVE THE PUZZLE OF RELATIONAL DATABASES"
-              img={img5}
+              ename="PIXEL IN THE SHADOWS (MIDJOURNEY)"
+              tagline="EXPERIENCE THE FUTURE OF INTELLIGENCE"
+              img={img1}
+              event="pixel"
             />
           </div>
         </div>

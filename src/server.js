@@ -1,4 +1,4 @@
-import { addDoc, getDoc, getDocs } from "firebase/firestore";
+import { addDoc, getDocs } from "firebase/firestore";
 import { getDownloadURL, uploadBytes } from "firebase/storage";
 
 export function Upload(databaseRef, data) {
