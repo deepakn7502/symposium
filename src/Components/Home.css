@@ -17,6 +17,8 @@
 
   /* overflow: scroll; */
 
+  /* cursor: url(../Images/gls1.png),auto; */
+
   /* background-color: black;
   visibility: hidden;  
   z-index: 9999; 
@@ -131,6 +133,8 @@
   margin: 20px auto;
   flex-wrap: wrap;
 }
+
+
 
 @keyframes shine {
   0% {
