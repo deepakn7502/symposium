@@ -77,6 +77,16 @@ function Home() {
             <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
         </div>
       </div>
+      {/* <div className="header-container">
+        <div className="header-logo">
+          <img src={logo} alt="" />
+        </div>
+        <div className="header-content">
+          <p>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</p>
+          <p>XERONE'23</p>
+          <p>AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
+        </div>
+      </div> */}
       {cards && (
         <div>
           <div className="cardc1">
