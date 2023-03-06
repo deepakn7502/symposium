@@ -72,7 +72,7 @@ function Home() {
         <img src={logo} alt="" />
         </div>
         <div className="content">
-          <p>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</p>
+          <h2>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h2>
             <p id="name">XERONE'23</p>
             <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
         </div>
