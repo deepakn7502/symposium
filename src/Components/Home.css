@@ -77,8 +77,6 @@
   text-align: center;
   font-size: 100%;
 
-  
-
   /* position: absolute;
   top: 10%;
   left: 50%; */
@@ -109,7 +107,7 @@
   justify-content: space-between; */
 }
 
-.content p{
+.content p {
   width: 100%;
   font-size: 100%;
 }
@@ -117,7 +115,6 @@
 #name {
   font-size: 800%;
   word-spacing: -25px;
-  
 }
 
 #tagname {
@@ -142,8 +139,6 @@
   margin: 20px auto;
   flex-wrap: wrap;
 }
-
-
 
 @keyframes shine {
   0% {
@@ -315,16 +310,16 @@
     width: 100%;
   }
 
-  .content h1 {
+  .content p {
     font-size: 100%;
   }
 
-  .content p:nth-child(1) {
+  #name {
     font-size: 350%;
     word-spacing: -25px;
   }
 
-  .content p:nth-child(2) {
+  #tagname {
     font-size: 120%;
   }
 }
