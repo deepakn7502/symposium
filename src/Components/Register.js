@@ -64,7 +64,7 @@ function Register() {
         "https://docs.google.com/forms/d/e/1FAIpQLSfzSHHxDaQ-yXB20rkY4AzKC5ihEF6zvpMpQFsP2dbsRMEcPA/viewform?usp=sf_link"
       );
     } else if (event === "crack") {
-      setName("CRACK TO BUILD");
+      setName("CODE TO BUILD");
       setLink(
         "https://docs.google.com/forms/d/e/1FAIpQLScNQlsUfr8XX8A3hXaqxwD-GJkNeI8Z-Vr8FfvokcXHDeuYlA/viewform?usp=sf_link"
       );

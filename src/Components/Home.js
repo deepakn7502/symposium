@@ -103,7 +103,7 @@ function Home() {
               event="sql"
             />
             <Card
-              ename="CRACK TO BUILD"
+              ename="CODE TO BUILD"
               tagline="UNLEASH YOUR INNER DETECTIVE"
               img={img3}
               event="crack"
