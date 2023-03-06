@@ -55,15 +55,15 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .header .logo {
   width: 20%;
   height: 100%;
   animation: fadeIn-title 3s;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .logo img {
@@ -78,13 +78,15 @@
   text-align: center;
   font-size: 100%;
 
+  
+
   /* position: absolute;
   top: 10%;
   left: 50%; */
 
   color: hsl(0, 0%, 28%);
   font-weight: bold !important;
-  font-family: monospace;
+  font-family: brittanic bold;
   letter-spacing: 5px !important;
   /* transform: translate(-50%, -50%);  */
   /* cursor: pointer; */
@@ -108,17 +110,18 @@
   /* transition: 2s; */
 }
 
-.content h1 {
+.content p{
   width: 100%;
-  font-size: 200%;
+  font-size: 100%;
 }
 
-.content p:nth-child(1) {
+#name {
   font-size: 800%;
   word-spacing: -25px;
+  
 }
 
-.content p:nth-child(2) {
+#tagname {
   font-size: 150%;
 }
 

@@ -12,13 +12,10 @@ import img4 from "../Images/fortune-500.jpg";
 import img5 from "../Images/mystery-hunt.png";
 
 function Home() {
-  const [header, setheader] = useState(false);
-
   const [cards, setcards] = useState(false);
 
   const videoRef = useRef(null);
   // const audioRef = useRef(null);
-  
 
   useEffect(() => {
     // play video and audio together
@@ -27,9 +24,9 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    setTimeout(() => {
-      setheader(true);
-    }, 100);
+    //   setTimeout(() => {
+    //     setheader(true);
+    //   }, 100);
 
     setTimeout(() => {
       setcards(true);
@@ -59,26 +56,33 @@ function Home() {
         {/* <audio ref={audioRef} src={bgm} autostart="true" id="audio" /> */}
       </div>
 
-      <div className="header">
+      {/* <div className="header">
         <div className="logo">
           <img src={logo} alt="" />
         </div>
-        {header && (
-          <div className="content">
-            <h1>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h1>
-            <div>
-              <p id="name">NOIR ON CAMPUS</p>
-              <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
-            </div>
-          </div>
-        )}
+
+        <div className="content">
+          <h1>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h1>
+            <p id="name">XERONE'23</p>
+            <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
+        </div>
+      </div> */}
+      <div className="header">
+        <div className="logo">
+        <img src={logo} alt="" />
+        </div>
+        <div className="content">
+          <p>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</p>
+            <p id="name">XERONE'23</p>
+            <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
+        </div>
       </div>
       {cards && (
         <div>
           <div className="cardc1">
             <Card
               ename="SHERLOCK CODES"
-              tagline="UNRAVEL COMPLEX PROGRAMMING PROBLEMS."
+              tagline="UNRAVEL COMPLEX PROGRAMMING."
               img={img2}
               event="sherlock"
             />
