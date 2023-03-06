@@ -56,7 +56,7 @@ function Register() {
     if (event === "pixel") {
       setName("PIXEL IN THE SHADOWS (MIDJOURNEY)");
       setLink(
-        "https://docs.google.com/forms/d/e/1FAIpQLSfMMFip5yBnBzG1ldcaehKx84XVeDwGLr1riG0ja6JH9WpGsA/viewform?usp=sf_link"
+        "https://docs.google.com/forms/d/e/1FAIpQLSdh18S0JOCVgv1GNoaS1D5f_wFvS7iH_2XxhjPP8gXUXPWa9g/viewform?usp=sf_link"
       );
     } else if (event === "sherlock") {
       setName("SHERLOCK CODES");

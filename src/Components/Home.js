@@ -8,8 +8,8 @@ import backgroundVideo from "../Images/bg.mp4";
 import img1 from "../Images/dalleai.jpg";
 import img2 from "../Images/crack.jpg";
 import img3 from "../Images/coder.jpg";
-import img4 from "../Images/fortune500.jpg";
-import img5 from "../Images/card1.jpg";
+import img4 from "../Images/fortune-500.jpg";
+import img5 from "../Images/mystery-hunt.png";
 
 function Home() {
   const [header, setheader] = useState(false);
@@ -18,6 +18,7 @@ function Home() {
 
   const videoRef = useRef(null);
   // const audioRef = useRef(null);
+  
 
   useEffect(() => {
     // play video and audio together
