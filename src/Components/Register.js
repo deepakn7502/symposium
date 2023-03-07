@@ -59,7 +59,7 @@ function Register() {
         "https://docs.google.com/forms/d/e/1FAIpQLSdh18S0JOCVgv1GNoaS1D5f_wFvS7iH_2XxhjPP8gXUXPWa9g/viewform?usp=sf_link"
       );
     } else if (event === "sherlock") {
-      setName("SHERLOCK CODES");
+      setName("CRACK THE CASE");
       setLink(
         "https://docs.google.com/forms/d/e/1FAIpQLSfzSHHxDaQ-yXB20rkY4AzKC5ihEF6zvpMpQFsP2dbsRMEcPA/viewform?usp=sf_link"
       );
@@ -131,24 +131,21 @@ function Register() {
     } else if (event === "sherlock") {
       return (
         <ul>
-          <li>2 participants per team</li>
+          <li>3 participants per team </li>
           <li>
-            Participants can prepare pattern generation programs and debugging
+            Participants can prepare on their topic based on computer related streams
           </li>
           <li>
-            In Preliminary round participants will be provided a pattern for
-            which the participants have to write a program and get the desired
-            pattern as output.
+            Preliminary round will be conducted
           </li>
           <li>
-            Shortlisted participants will be given a riddle , and the number of
-            participants who answer it first will move to the finals
+              Shortlisted participants can participate in the final round
           </li>
           <li>
-            In final round, there will be a murder story in which there will be
-            a crime suspect, participants have to find the suspect by debugging
-            the given snippets for clues .
+            Minimum number of pages should be 7 and should not exceed 15 pages
           </li>
+          <li>Time duration : 20 minutes for each team</li>
+          <li>The judges will evaluate based on presentation , communication and clear view of the topic</li>
         </ul>
       );
     } else if (event === "crack") {
@@ -290,20 +287,25 @@ function Register() {
                 <p> GUIDELINES</p>
                 <div className="gui">{returnInstructions()}</div>
                 <div className="button-cont">
-                  <Button
-                    variant="contained"
+                  <Button 
+                    variant="contained" target="_blank"
                     onClick={() => {
                       window.location.href = link;
-                    }}
+                    }} 
                   >
                     Register
-                  </Button>
+                  </Button >
                 </div>
               </div>
             </div>
           </div>
         </div>
 
+{/* <<<<<<< HEAD
+        <div className="button-cont">
+          <Button onClick={()=>{window.location.href=link}} >Register</Button>
+        </div>
+=======
         {/* <div className="button-cont">
           <Button
             variant="contained"
@@ -314,6 +316,7 @@ function Register() {
             Register
           </Button>
         </div> */}
+
       </div>
       {/* <div className="inputs-container">
         <div className="input-field">

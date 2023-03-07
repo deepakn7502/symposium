@@ -5,10 +5,10 @@ import Card from "./Card";
 import backgroundVideo from "../Images/bg.mp4";
 // import bgm from "../Images/bgm.mp3";
 
-import img1 from "../Images/dalleai.jpg";
-import img2 from "../Images/crack.jpg";
-import img3 from "../Images/coder.jpg";
-import img4 from "../Images/fortune-500.jpg";
+import img1 from "../Images/pixel.png";
+import img2 from "../Images/scode.png";
+import img3 from "../Images/codetobuild.png";
+import img4 from "../Images/fortune500.png";
 import img5 from "../Images/mystery-hunt.png";
 
 function Home() {
@@ -69,12 +69,12 @@ function Home() {
       </div> */}
       <div className="header">
         <div className="logo">
-        <img src={logo} alt="" />
+          <img src={logo} alt="" />
         </div>
         <div className="content">
           <h2>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h2>
-            <p id="name">XERONE'23</p>
-            <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
+          <p id="name">XERONE'23</p>
+          <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
         </div>
       </div>
       {/* <div className="header-container">
@@ -91,7 +91,7 @@ function Home() {
         <div>
           <div className="cardc1">
             <Card
-              ename="SHERLOCK CODES"
+              ename="CRACK THE CASE"
               tagline="UNRAVEL COMPLEX PROGRAMMING."
               img={img2}
               event="sherlock"
@@ -118,7 +118,7 @@ function Home() {
               event="fortune"
             />
             <Card
-              ename="PIXEL IN THE SHADOWS (MIDJOURNEY)"
+              ename="PIXEL IN THE SHADOWS"
               tagline="EXPERIENCE THE FUTURE OF INTELLIGENCE"
               img={img1}
               event="pixel"
@@ -126,6 +126,17 @@ function Home() {
           </div>
         </div>
       )}
+
+      <div className="credits">
+        <h3>DESIGNED AND DEVELOPED BY</h3>
+        <a href="https://www.linkedin.com/in/deepak-n-71087b24a" target="_blank">DEEPAK N </a>
+        <a href="https://www.linkedin.com/in/bharath-waj-660957178" target="_blank">BHARATHWAJ M </a>
+        <a href="https://www.linkedin.com/in/arunkumar-j-b6a0b2241" target="_blank">ARUNKUMAR J </a>
+        <a href="https://www.linkedin.com/in/daniel-george-51223a218" target="_blank">DANIEL GEORGE S </a>
+        <a href="https://www.linkedin.com/in/" target="_blank">ASHWIN SANJAY J</a>
+        <a href="https://www.linkedin.com/in/sanjeev-vijayanand" target="_blank" >SANJEEV V </a>
+      
+      </div>
     </div>
   );
 }
