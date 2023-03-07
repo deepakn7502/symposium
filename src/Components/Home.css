@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
 .main {
   height: 100vh;
   width: 100vw;
-  background-image: url("../Images/background-img-symp.jpg");
+  background-image: url("../Images/background-img-symp-new.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,6 +17,8 @@
   background-attachment: local;  */
 
   /* overflow: scroll; */
+
+  /* cursor: url(../Images/gls1.png),auto; */
 
   /* background-color: black;
   visibility: hidden;  
@@ -49,16 +52,15 @@
 }
 
 .main .header {
-  height: auto;
+  height: 300px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .header .logo {
   width: 20%;
-  height: 100%;
   animation: fadeIn-title 3s;
   display: flex;
   justify-content: center;
@@ -66,15 +68,16 @@
 
 .logo img {
   width: 90%;
-  height: auto;
+  height: 30%;
   margin: 0 auto;
 }
 
 .header .content {
-  width: 80%;
+  width: 70%;
   height: 100%;
   text-align: center;
   font-size: 100%;
+  
 
   /* position: absolute;
   top: 10%;
@@ -82,12 +85,11 @@
 
   color: hsl(0, 0%, 28%);
   font-weight: bold !important;
-  font-family: monospace;
+  font-family: brittanic bold;
   letter-spacing: 5px !important;
-  /* transform: translate(-50%, -50%);  */
-  /* cursor: pointer; */
   cursor: pointer;
   text-transform: uppercase;
+  
 
   padding: 10px;
   background: linear-gradient(
@@ -101,23 +103,26 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
   animation: fadeIn-title 3s, shine 3s infinite linear;
-  /* transition: 2s; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; */
 }
 
-.content h1 {
+.content p {
   width: 100%;
-  font-size: 200%;
+  font-size: 100%;
 }
 
-.content p:nth-child(1) {
+#name {
   font-size: 800%;
   word-spacing: -25px;
+  /* text-shadow: 2px 2px #ffc400; */
 }
 
-.content p:nth-child(2) {
-  font-size: 150%;
+#tagname {
+  font-size: 145%;
 }
 
 .cardc1 {
@@ -190,6 +195,29 @@
 
   transition: 2s;
 }
+
+.main .credits{
+  width:100%;
+  height: 35px;
+  background: url("../Images/g1.jpg") no-repeat;
+  opacity: 0.7;
+  background-size: cover;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.credits a{
+  color: black;
+  font-size: 16px;
+  font-family: 'Shantell Sans', cursive;
+  text-decoration: none;
+  transform: none;
+  font-weight: 800;
+
+}
+
 
 @keyframes shine {
   0% {
@@ -271,6 +299,26 @@
   animation: backgroundmotion 9s ease-in-out;
 } */
 
+.main .header-container {
+  height: auto;
+  width: 100%;
+}
+
+.header-container .header-logo {
+  height: 100%;
+  width: 20%;
+}
+
+.header-logo img {
+  width: 95%;
+  height: auto;
+}
+.header-container .header-content {
+  color: aliceblue;
+  height: 100%;
+  width: 80%;
+}
+
 @media screen and (max-width: 850px) {
   .main .video-container {
     visibility: hidden;
@@ -289,16 +337,20 @@
     width: 100%;
   }
 
-  .content h1 {
+  .content p {
     font-size: 100%;
   }
 
-  .content p:nth-child(1) {
+  #name {
     font-size: 350%;
     word-spacing: -25px;
   }
 
-  .content p:nth-child(2) {
+  #tagname {
     font-size: 120%;
+  }
+  .main .credits{
+    flex-direction: column;
+    height: auto;
   }
 }

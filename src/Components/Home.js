@@ -5,15 +5,13 @@ import Card from "./Card";
 import backgroundVideo from "../Images/bg.mp4";
 // import bgm from "../Images/bgm.mp3";
 
-import img1 from "../Images/dalleai.jpg";
-import img2 from "../Images/crack.jpg";
-import img3 from "../Images/coder.jpg";
-import img4 from "../Images/fortune500.jpg";
-import img5 from "../Images/card1.jpg";
+import img1 from "../Images/pixel.png";
+import img2 from "../Images/scode.png";
+import img3 from "../Images/codetobuild.png";
+import img4 from "../Images/fortune500.png";
+import img5 from "../Images/mystery-hunt.png";
 
 function Home() {
-  const [header, setheader] = useState(false);
-
   const [cards, setcards] = useState(false);
 
   const videoRef = useRef(null);
@@ -26,9 +24,9 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    setTimeout(() => {
-      setheader(true);
-    }, 100);
+    //   setTimeout(() => {
+    //     setheader(true);
+    //   }, 100);
 
     setTimeout(() => {
       setcards(true);
@@ -58,26 +56,43 @@ function Home() {
         {/* <audio ref={audioRef} src={bgm} autostart="true" id="audio" /> */}
       </div>
 
+      {/* <div className="header">
+        <div className="logo">
+          <img src={logo} alt="" />
+        </div>
+
+        <div className="content">
+          <h1>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h1>
+            <p id="name">XERONE'23</p>
+            <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
+        </div>
+      </div> */}
       <div className="header">
         <div className="logo">
           <img src={logo} alt="" />
         </div>
-        {header && (
-          <div className="content">
-            <h1>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h1>
-            <div>
-              <p id="name">NOIR ON CAMPUS</p>
-              <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
-            </div>
-          </div>
-        )}
+        <div className="content">
+          <h2>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h2>
+          <p id="name">XERONE'23</p>
+          <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
+        </div>
       </div>
+      {/* <div className="header-container">
+        <div className="header-logo">
+          <img src={logo} alt="" />
+        </div>
+        <div className="header-content">
+          <p>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</p>
+          <p>XERONE'23</p>
+          <p>AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
+        </div>
+      </div> */}
       {cards && (
         <div>
           <div className="cardc1">
             <Card
-              ename="SHERLOCK CODES"
-              tagline="UNRAVEL COMPLEX PROGRAMMING PROBLEMS."
+              ename="Sherlock Code"
+              tagline="UNRAVEL COMPLEX PROGRAMMING."
               img={img2}
               event="sherlock"
             />
@@ -88,7 +103,7 @@ function Home() {
               event="sql"
             />
             <Card
-              ename="CRACK TO BUILD"
+              ename="CODE TO BUILD"
               tagline="UNLEASH YOUR INNER DETECTIVE"
               img={img3}
               event="crack"
@@ -111,6 +126,17 @@ function Home() {
           </div>
         </div>
       )}
+
+      <div className="credits">
+        <h3>DESIGNED AND DEVELOPED BY</h3>
+        <a href="https://www.linkedin.com/in/deepak-n-71087b24a" target="_blank">DEEPAK N </a>
+        <a href="https://www.linkedin.com/in/bharath-waj-660957178" target="_blank">BHARATHWAJ M </a>
+        <a href="https://www.linkedin.com/in/arunkumar-j-b6a0b2241" target="_blank">ARUNKUMAR J </a>
+        <a href="https://www.linkedin.com/in/daniel-george-51223a218" target="_blank">DANIEL GEORGE S </a>
+        <a href="https://www.linkedin.com/in/" target="_blank">ASHWIN SANJAY J</a>
+        <a href="https://www.linkedin.com/in/sanjeev-vijayanand" target="_blank" >SANJEEV V </a>
+      
+      </div>
     </div>
   );
 }

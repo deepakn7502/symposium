@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Guidelines from "./Components/Guidelines";
 import Card from "./Components/Card";
-import Audio from "./Components/Audio";
+
 
 function App() {
 
@@ -17,9 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
-        {/* <Route path="/guidelines" element={<Guidelines />} />
-        <Route path="/card" element={<Card />} />
-        <Route path="/audio" element={<Audio />} /> */}
+         {/* <Route path="/guidelines" element={<Guidelines />} />
+        <Route path="/card" element={<Card />} /> */}
       </Routes>
     </Router>
   );
