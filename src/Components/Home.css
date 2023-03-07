@@ -176,7 +176,7 @@
   justify-content: space-around;
   margin: 10px auto;
 
-  animation: fadeIn-card1 3s;
+  animation: fadeIn-card 2s ease-in-out;
   transition: 1s;
 }
 
@@ -191,7 +191,7 @@
   justify-content: space-around;
   margin: 100px auto;
 
-  animation: fadeIn-card2 3s;
+  animation: fadeIn-card 2s ease-in-out;
 
   transition: 2s;
 }
@@ -243,24 +243,14 @@
   }
 }
 
-@keyframes fadeIn-card1 {
+@keyframes fadeIn-card {
   0% {
     opacity: 0;
-    margin: 350px auto;
+    transform: translateY(350px);
   }
   100% {
     opacity: 1;
-    margin: 150px auto;
-  }
-}
-@keyframes fadeIn-card2 {
-  0% {
-    opacity: 0;
-    margin: 400px auto;
-  }
-  100% {
-    opacity: 1;
-    margin: 250px auto;
+    transform: translateY(0px);
   }
 }
 
