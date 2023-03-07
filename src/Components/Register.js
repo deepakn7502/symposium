@@ -304,6 +304,11 @@ function Register() {
           </div>
         </div>
 
+{/* <<<<<<< HEAD
+        <div className="button-cont">
+          <Button onClick={()=>{window.location.href=link}} >Register</Button>
+        </div>
+=======
         {/* <div className="button-cont">
           <Button
             variant="contained"
@@ -314,6 +319,7 @@ function Register() {
             Register
           </Button>
         </div> */}
+
       </div>
       {/* <div className="inputs-container">
         <div className="input-field">
