@@ -155,17 +155,17 @@ function Register() {
           <li>Participants will be provided with a problem statement.</li>
 
           <li>
-            Participants should use develop a application that solves the
+            Participants should develop an application that solves the
             problem statement
           </li>
-          <li>* The event will consist of two rounds.</li>
+          <li>The event will consist of two rounds.</li>
           <li>
-            First round- participants must develop an application for given
+            First round- Participants must develop an application for the given
             problem statement, this will be conducted online.
           </li>
           <li>
-            The final round - 5 teams will be chosen and they will participate
-            in application development in Panimalar Engineering College
+            Final round - 5 teams will be selected and they will compete against each other
+            in an application development round at Panimalar Engineering College
             (offline)
           </li>
           <li>
@@ -174,11 +174,11 @@ function Register() {
             to solve the provided problem .
           </li>
           <li>
-            Application irrelevant to the topic will not be accepted for
+            Applications irrelevant to the topic will not be accepted for
             evaluation.
           </li>
           <li>
-            Team that fails to abide by the regulations, will be disqualified
+            Teams that fail to abide by the regulations, will be disqualified
           </li>
         </ul>
       );
@@ -234,7 +234,7 @@ function Register() {
     } else if (event === "sql") {
       return (
         <ul>
-          <li>Two per team (max)</li>
+          <li>Two per team</li>
           <li>
             The activity will be based on a storyline and the problem statement
             is common for everyone.
@@ -243,13 +243,13 @@ function Register() {
             The storyline is based on a murder which happened on SQLcity,
             participants must solve the crime using SQL commands.
           </li>
-          <li>Time to solve the mystery would be 40 mins.</li>
+          <li>Time to solve the mystery would be 20 mins.</li>
           <li>
-            Participants must submit the identified killer name and their code
+            Participants must submit the identified killer's name and their code
             after completing the mystery.
           </li>
           <li>
-            All Participants will be given some code snipets that are mandatory
+            All the Participants will be given some code snippets that are mandatory
             for the game, before 1 hour.
           </li>
           <li>
@@ -260,17 +260,14 @@ function Register() {
             All your answers must be attached as a pdf and must be sent back to
             the same mail.
           </li>
-          <li>
-            Winners are announced by reviewing their performance and will be
-            selected for the finals.
+          <li>Your performance will be reviewed and the results will be announced.
           </li>
           <li>
             All the code snippets will be sent to your respective mail id from
             which you can access them to create the initial tables.
           </li>
           <li>Prerequisites for SQL Mystery Hunt</li>
-          <li>-MySQL Software installed</li>
-          <li>-MySQL Workbench installed</li>
+          <li>-MySQL  Workbench installed</li>
         </ul>
       );
     }

@@ -72,7 +72,7 @@ function Home() {
           <img src={logo} alt="" />
         </div>
         <div className="content">
-          <h2>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h2>
+          <h2>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h2>
           <p id="name">XERONE'23</p>
           <p id="tagname">AN INTERCOLLEGIATE SYMPOSIUM</p>
         </div>
@@ -92,7 +92,7 @@ function Home() {
           <div className="cardc1">
             <Card
               ename="CRACK THE CASE"
-              tagline="UNRAVEL COMPLEX PROGRAMMING."
+              tagline="UNRAVEL COMPLEX PROGRAMMING"
               img={img2}
               event="sherlock"
             />
