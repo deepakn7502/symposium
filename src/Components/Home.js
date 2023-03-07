@@ -91,7 +91,7 @@ function Home() {
         <div>
           <div className="cardc1">
             <Card
-              ename="Sherlock Code"
+              ename="CRACK THE CASE"
               tagline="UNRAVEL COMPLEX PROGRAMMING."
               img={img2}
               event="sherlock"
@@ -118,7 +118,7 @@ function Home() {
               event="fortune"
             />
             <Card
-              ename="PIXEL IN THE SHADOWS (MIDJOURNEY)"
+              ename="PIXEL IN THE SHADOWS"
               tagline="EXPERIENCE THE FUTURE OF INTELLIGENCE"
               img={img1}
               event="pixel"
