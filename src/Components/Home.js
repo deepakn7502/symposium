@@ -74,7 +74,7 @@ function Home() {
         <div className="content">
           <h2>DEPARMENT OF COMPUTER SCIENCE AND ENGINEERING presents</h2>
           <p id="name">XERONE'23</p>
-          <p id="tagname">AN INTERCOLLEGIATE VIRTUAL SYMPOSIUM </p>
+          <p id="tagname">AN INTERCOLLEGIATE SYMPOSIUM</p>
         </div>
       </div>
       {/* <div className="header-container">

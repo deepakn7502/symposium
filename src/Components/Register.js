@@ -133,19 +133,19 @@ function Register() {
         <ul>
           <li>3 participants per team </li>
           <li>
-            Participants can prepare on their topic based on computer related streams
+            Participants can prepare on their topic based on computer related
+            streams
           </li>
-          <li>
-            Preliminary round will be conducted
-          </li>
-          <li>
-              Shortlisted participants can participate in the final round
-          </li>
+          <li>Preliminary round will be conducted</li>
+          <li>Shortlisted participants can participate in the final round</li>
           <li>
             Minimum number of pages should be 7 and should not exceed 15 pages
           </li>
           <li>Time duration : 20 minutes for each team</li>
-          <li>The judges will evaluate based on presentation , communication and clear view of the topic</li>
+          <li>
+            The judges will evaluate based on presentation , communication and
+            clear view of the topic
+          </li>
         </ul>
       );
     } else if (event === "crack") {
@@ -287,21 +287,16 @@ function Register() {
                 <p> GUIDELINES</p>
                 <div className="gui">{returnInstructions()}</div>
                 <div className="button-cont">
-                  <Button 
-                    variant="contained" target="_blank"
-                    onClick={() => {
-                      window.location.href = link;
-                    }} 
-                  >
+                  <a href={link} target="_blank">
                     Register
-                  </Button >
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-{/* <<<<<<< HEAD
+        {/* <<<<<<< HEAD
         <div className="button-cont">
           <Button onClick={()=>{window.location.href=link}} >Register</Button>
         </div>
@@ -316,7 +311,6 @@ function Register() {
             Register
           </Button>
         </div> */}
-
       </div>
       {/* <div className="inputs-container">
         <div className="input-field">
