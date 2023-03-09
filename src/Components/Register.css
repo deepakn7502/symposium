@@ -193,8 +193,13 @@ p {
   cursor: pointer;
 }
 
-.button-cont .MuiButton-root {
+.button-cont a {
   background-color: #880808;
+  text-decoration: none;
+  height: fit-content;
+  width: fit-content;
+  padding: 3px 15px;
+  border-radius: 10px;
   color: bisque;
   cursor: pointer;
 }
