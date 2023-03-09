@@ -137,7 +137,7 @@ function Register() {
          <li>Minimum number of pages should be 7 and should not exceed 15 pages.</li>
          <li>Winner and runners will be announced on 13/03/2023.</li>
          <li> 
-          <a href="https://drive.google.com/file/d/1zV8HIHLEsk8_D8fin9JNo_D1eWr47WHu/view?usp=share_link" > Refer the link for format and sample </a>
+          <a href="https://drive.google.com/drive/folders/11qpKdR5PFzipuHXQuCdgFLlzbu11rmGo?usp=share_link" > Refer the link for format and sample </a>
           </li>
          <li>The judges will evaluate based on communication and clear view of the topic</li>
          <li>Submit your paper via mail: 
