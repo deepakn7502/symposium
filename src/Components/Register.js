@@ -134,7 +134,7 @@ function Register() {
          <li>3 participants per team.</li>
          <li>Participants can prepare on topic based on recent computer technology related.</li>
          <li>Participants have to submit their paper on or before 12/03/2023.</li>
-         <li>Minimum number of pages should be 7 and should not exceed 15 pages.</li>
+         <li>Minimum number of pages should be 3 and should not exceed 15 pages.</li>
          <li>Winner and runners will be announced on 13/03/2023.</li>
          <li> 
           <a href="https://drive.google.com/drive/folders/11qpKdR5PFzipuHXQuCdgFLlzbu11rmGo?usp=share_link" > Refer the link for format and sample </a>
