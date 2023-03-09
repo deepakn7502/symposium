@@ -131,7 +131,6 @@ function Register() {
     } else if (event === "sherlock") {
       return (
         <ul>
-<<<<<<< HEAD
          <li>3 participants per team.</li>
          <li>Participants can prepare on topic based on recent computer technology related.</li>
          <li>Participants have to submit their paper on or before 12/03/2023.</li>
@@ -143,22 +142,6 @@ function Register() {
          <li>The judges will evaluate based on communication and clear view of the topic</li>
          <li>Submit your paper via mail: 
            csexerone@gmail.com
-=======
-          <li>3 participants per team </li>
-          <li>
-            Participants can prepare on their topic based on computer related
-            streams
-          </li>
-          <li>Preliminary round will be conducted</li>
-          <li>Shortlisted participants can participate in the final round</li>
-          <li>
-            Minimum number of pages should be 7 and should not exceed 15 pages
-          </li>
-          <li>Time duration : 20 minutes for each team</li>
-          <li>
-            The judges will evaluate based on presentation , communication and
-            clear view of the topic
->>>>>>> 6a1cea55edebe75ab17fcb7276f153d0ac495cbe
           </li>
         </ul>
       );
