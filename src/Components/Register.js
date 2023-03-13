@@ -131,18 +131,29 @@ function Register() {
     } else if (event === "sherlock") {
       return (
         <ul>
-         <li>3 participants per team.</li>
-         <li>Participants can prepare on topic based on recent computer technology related.</li>
-         <li>Participants have to submit their paper on or before 12/03/2023.</li>
-         <li>Minimum number of pages should be 3 and should not exceed 15 pages.</li>
-         <li>Winner and runners will be announced on 13/03/2023.</li>
-         <li> 
-          <a href="https://drive.google.com/drive/folders/11qpKdR5PFzipuHXQuCdgFLlzbu11rmGo?usp=share_link" > Refer the link for format and sample </a>
+          <li>3 participants per team.</li>
+          <li>
+            Participants can prepare on topic based on recent computer
+            technology related.
           </li>
-         <li>The judges will evaluate based on communication and clear view of the topic</li>
-         <li>Submit your paper via mail: 
-           csexerone@gmail.com
+          <li>
+            Participants have to submit their paper on or before 12/03/2023.
           </li>
+          <li>
+            Minimum number of pages should be 3 and should not exceed 15 pages.
+          </li>
+          <li>Winner and runners will be announced on 13/03/2023.</li>
+          <li>
+            <a href="https://drive.google.com/drive/folders/11qpKdR5PFzipuHXQuCdgFLlzbu11rmGo?usp=share_link">
+              {" "}
+              Refer the link for format and sample{" "}
+            </a>
+          </li>
+          <li>
+            The judges will evaluate based on communication and clear view of
+            the topic
+          </li>
+          <li>Submit your paper via mail: csexerone@gmail.com</li>
         </ul>
       );
     } else if (event === "crack") {
@@ -152,8 +163,8 @@ function Register() {
           <li>Participants will be provided with a problem statement.</li>
 
           <li>
-            Participants should develop an application that solves the
-            problem statement
+            Participants should develop an application that solves the problem
+            statement
           </li>
           <li>The event will consist of two rounds.</li>
           <li>
@@ -161,9 +172,9 @@ function Register() {
             problem statement, this will be conducted online.
           </li>
           <li>
-            Final round - 5 teams will be selected and they will compete against each other
-            in an application development round at Panimalar Engineering College
-            (offline)
+            Final round - 5 teams will be selected and they will compete against
+            each other in an application development round at Panimalar
+            Engineering College (offline)
           </li>
           <li>
             The judges will evaluate the application based on the following
@@ -182,12 +193,10 @@ function Register() {
     } else if (event === "fortune") {
       return (
         <ul>
-          <li>3 Members per team.</li>
-          <li>One team per college.</li>
-
-          <li>
-            Each team will be given a topic ,where the two different company's
-            output or products will be given.
+          <li>2 or 3 Members per team.</li>
+          <li> 
+            Each team will be given a topic ,where the two different fortune 500 company's
+             products will be given.
           </li>
           <li>
             Your team has to infuse or integrate both the products of different
@@ -211,11 +220,10 @@ function Register() {
           </li>
           <li>Recorded video must be sent within a hour.</li>
           <li>
-            The recorded video must be within minimum 2 minutes to maximum 5
-            minutes, more than that is not advisable ( Make it crisp and catchy,
-            cause no one likes to watch ad for more than a minute..cause we
-            obviously know more duration makes ad boring, So try not to be
-            boring).
+            The recorded video must be within 2 minutes , more than that is not
+            advisable ( Make it crisp and catchy, cause no one likes to watch ad
+            for more than a minute..cause we obviously know more duration makes
+            ad boring, So try not to be boring).
           </li>
           <li>
             Recorded content must have clear audio and (video) and interference
@@ -246,8 +254,8 @@ function Register() {
             after completing the mystery.
           </li>
           <li>
-            All the Participants will be given some code snippets that are mandatory
-            for the game, before 1 hour.
+            All the Participants will be given some code snippets that are
+            mandatory for the game, before 1 hour.
           </li>
           <li>
             The actual problem statement will be sent to your mail at the
@@ -257,14 +265,15 @@ function Register() {
             All your answers must be attached as a pdf and must be sent back to
             the same mail.
           </li>
-          <li>Your performance will be reviewed and the results will be announced.
+          <li>
+            Your performance will be reviewed and the results will be announced.
           </li>
           <li>
             All the code snippets will be sent to your respective mail id from
             which you can access them to create the initial tables.
           </li>
           <li>Prerequisites for SQL Mystery Hunt</li>
-          <li>-MySQL  Workbench installed</li>
+          <li>-MySQL Workbench installed</li>
         </ul>
       );
     }
